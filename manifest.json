@@ -1,0 +1,25 @@
+{
+  "name": "72 Nombres · Meditación",
+  "short_name": "72 Nombres",
+  "description": "Los 72 Nombres de Dios - Meditación Kabbalística diaria",
+  "start_url": "/72-nombres/",
+  "scope": "/72-nombres/",
+  "display": "standalone",
+  "background_color": "#f2e8d5",
+  "theme_color": "#c8a050",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/72-nombres/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/72-nombres/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
