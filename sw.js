@@ -1,10 +1,17 @@
-const CACHE = '72nombres-v1';
-const FILES = ['/72-nombres/', '/72-nombres/index.html', '/72-nombres/icon-192.PNG', '/72-nombres/icon-512.PNG'];
-
-self.addEventListener('install', e => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)));
+// v3 — red primero y sin esperar la caché del navegador: siempre consulta si hay versión nueva.
+// La copia guardada se usa solo sin conexión.
+const CACHE = '72nombres-v3';
+self.addEventListener('install', e => { self.skipWaiting(); });
+self.addEventListener('activate', e => {
+  e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim()));
 });
-
 self.addEventListener('fetch', e => {
-  e.respondWith(caches.match(e.request).then(r => r || fetch(e.request)));
+  if (e.request.method !== 'GET') return;
+  const sameOrigin = new URL(e.request.url).origin === location.origin;
+  e.respondWith(
+    fetch(sameOrigin ? new Request(e.request, { cache: 'no-cache' }) : e.request).then(r => {
+      if (r.ok && sameOrigin) { const c = r.clone(); caches.open(CACHE).then(ca => ca.put(e.request, c)); }
+      return r;
+    }).catch(() => caches.match(e.request))
+  );
 });
