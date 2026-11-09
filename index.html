@@ -7,502 +7,667 @@
 <link rel="apple-touch-icon" href="data:image/png;base64,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6cc0geq922YvnTtVgiE5Q3lx2MbGjxP/BFmWKcpPlXg8k6p82L3/k9scN8mllGR92G9emyefF4IxSozjwvXW3gH+i92LZ8d66z0nlIr7nX/+Z6Xjh01Yllm3PKknr6R565SVorA4OM5eUtbAu4llmaK18po2ym60vX+kirpzcUJUhOaXP5rjlQXQSSksjosVbd3EPTK5WbFJ8aESj4ditzNfnK07cq7O8cfWLE7YsT5dtu+temweI2P20su8E8bDMNsWSuXkxSrjXvv83vUffATYnRBr2/JmpMm+EUdUlJSHN/ean/Sw3/3VE5mjJSPnztg7Bne/8ntpnYT9QGWZfIXG3asT/f6MsakFBOH3W4/dl7u08at6q6/HLprJhb1GYaJjgjasy1LxJt9vEIxcVypfNLWOcS7aUFGdIo7nnx3BcfZD5+u+epSo4Ob//IXG3ZsmCn0hYJepIyB2u3M0fPkWxW8Pm0Ye0fePXjHwdJ4VLhmz7bZc+V9hPE8ZcRx/Z7xcQf/A+nz06PSpsVLO5z/c7Gi7aOSagdPKK1ZlLBjg8hTkuLS+s/P1D79k8K86eJeKSaCMuIoLnUwbXhtyMM0ZDtQXHWVeKifYZjIcM2eLVnz0iW9ZdyNFBDHzQdd1IvS5qZFzkwKl3Y4/3Wvtuevh+/20k+t5eXqf7YxQ7ZrGM5QwNCPOpg2CrwwbXCc/bMztccvNlLvetBpNa9vyVyQIekDSJ4g9zgqH3VTB3qzZ0RmJIt57ZorOrqH3zl4p75lgPrAqhz9zkJlTxj/I/ffQzH96jfpT1LKKto+KnkwauF/EkIXFrh7S9ZCaZ9Y9ChZx1FV11vd2Me7KTNFJ+VTxUMjtgPFD65UdlAfWJmt31mYLuUj8BKQdRwOTlK2Sni0Ud3Y9+6hO9QFv4iwwF8UZeZkuuHlpHIj3zgeNvXfq+V/oDQjOUKya9xfnK0rLiVfGMQwTN+g5e2Pb0kzGInJ6+6SpxXT17ulnDYcl+HbZBqHg/dTz0wKl/mVbp8h0zgcvJ96q8xu9/JhcozDwfupZyRqlbsarThyjMPB+6mlPNoA2cXRYjRfu8t/g12KQesDa9IKIrs4jtLThtfv2/ihkVccDt5PPT0hzCcXmuRMXnE4eD91kSyfgPVtMorDSL+fOik+NDcrVuLxgIzi+JJ+P3XR2lQZPHT+g8Ne+3Sjt8cAMiWjmQPkBnEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEACXEA6T9BTD/M/057XQAAAABJRU5ErkJggg==">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#c8a050">
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Frank+Ruhl+Libre:wght@400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  :root {
+    --ink: #2c1f0e; --ink-soft: rgba(44,31,14,0.68); --gold: #8a6020; --gold-line: rgba(160,110,40,0.3);
+    --green: #2a5c2a; --red: #7a2a2a; --blue: #2a5070; --purple: #5a2a8a; --teal: #1f5f5f; --wine: #6a2048;
+  }
   body {
-    min-height: 100vh;
-    background-color: #f2e8d5;
+    min-height: 100vh; background-color: #f2e8d5;
     background-image:
       radial-gradient(ellipse 70% 40% at 15% 10%, rgba(210,170,80,0.18) 0%, transparent 60%),
       radial-gradient(ellipse 50% 50% at 85% 90%, rgba(180,130,60,0.12) 0%, transparent 55%),
       radial-gradient(ellipse 80% 60% at 50% 50%, rgba(242,232,213,1) 0%, #e8d9bc 100%);
-    font-family: 'EB Garamond', Georgia, serif;
-    font-size: 18px;
-    color: #2c1f0e;
-    padding: 0 0 60px;
+    background-attachment: fixed;
+    font-family: 'EB Garamond', Georgia, serif; font-size: 18px; color: var(--ink); padding: 0 0 60px;
   }
-  .container { max-width: 440px; margin: 0 auto; padding: 40px 18px; }
+  .container { max-width: 460px; margin: 0 auto; padding: 28px 16px; }
+  .he { font-family: 'Frank Ruhl Libre', 'Times New Roman', serif; direction: rtl; }
 
-  .header { text-align: center; margin-bottom: 40px; animation: fadeDown 0.9s ease both; }
-  .header-star { font-size: 26px; color: #9a7a3a; margin-bottom: 14px; display: block; }
+  /* Header */
+  .header { text-align: center; margin-bottom: 28px; }
+  .header-star { font-size: 26px; color: #9a7a3a; display: block; margin-bottom: 10px; }
   .header-title { font-family: 'Cinzel', serif; font-size: 15px; letter-spacing: 5px; color: #7a5c28; text-transform: uppercase; margin-bottom: 8px; }
-  .header-date { font-family: 'Cinzel', serif; font-size: 15px; letter-spacing: 2px; color: #a08040; text-transform: capitalize; }
+  .header-date { font-family: 'Cinzel', serif; font-size: 15px; letter-spacing: 2px; color: #a08040; }
+  .header-heb { font-family: 'EB Garamond', serif; font-size: 17px; color: #7a5c28; margin-top: 4px; font-style: italic; }
   .header-line { width: 50px; height: 1px; background: linear-gradient(90deg, transparent, #b8943a, transparent); margin: 14px auto 0; }
 
-  .card {
-    background: linear-gradient(160deg, rgba(255,248,230,0.9) 0%, rgba(245,232,200,0.7) 100%);
-    border: 1px solid rgba(160,110,40,0.25);
-    border-radius: 16px; overflow: hidden; position: relative;
-    margin-bottom: 18px;
-    box-shadow: 0 2px 12px rgba(140,90,20,0.08), 0 1px 3px rgba(140,90,20,0.06), inset 0 1px 0 rgba(255,255,255,0.6);
-    animation: fadeUp 0.9s ease both;
-  }
-  .card-inner { padding: 28px 22px 22px; }
-  .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+  /* Top bar in sub-views */
+  .topbar { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+  .back { font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 2px; color: #7a5c28; text-decoration: none; padding: 8px 12px; border: 1px solid var(--gold-line); border-radius: 8px; background: rgba(255,248,230,0.7); }
+  .view-title { font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 3px; color: #7a5c28; text-transform: uppercase; text-align: right; }
 
-  .badge { font-family: 'Cinzel', serif; font-size: 8px; letter-spacing: 2.5px; text-transform: uppercase; padding: 3px 9px; border-radius: 4px; }
-  .badge-gold { color: #7a4e10; border: 1px solid rgba(160,110,40,0.4); background: rgba(200,160,60,0.1); }
-  .badge-blue { color: #2a5070; border: 1px solid rgba(60,110,160,0.35); background: rgba(80,140,190,0.08); }
-  .badge-purple { color: #5a2a8a; border: 1px solid rgba(120,60,160,0.4); background: rgba(140,80,200,0.08); }
-  .badge-green { color: #2a5c2a; border: 1px solid rgba(80,140,80,0.4); background: rgba(80,160,80,0.08); }
+  /* Menu */
+  .menu { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .tile { display: block; text-decoration: none; color: var(--ink); background: linear-gradient(160deg, rgba(255,248,230,0.95), rgba(245,232,200,0.75)); border: 1px solid var(--gold-line); border-radius: 14px; padding: 18px 14px 16px; box-shadow: 0 2px 10px rgba(140,90,20,0.08); min-height: 128px; }
+  .tile:active { transform: scale(0.98); }
+  .tile-he { font-family: 'Frank Ruhl Libre', serif; font-size: 30px; direction: rtl; line-height: 1.1; margin-bottom: 10px; }
+  .tile-name { font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 1.5px; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; }
+  .tile-sub { font-size: 15px; font-style: italic; color: var(--ink-soft); line-height: 1.3; }
+  .tile.wide { grid-column: span 2; min-height: 0; }
 
-  .card-num { font-family: 'Cinzel', serif; font-size: 11px; color: rgba(160,120,50,0.45); }
-  .letras { display: flex; justify-content: center; gap: 5px; flex-wrap: wrap; margin-bottom: 16px; }
+  /* Banner */
+  .banner { background: #fff8e6; border: 1px solid rgba(160,110,40,0.45); border-radius: 12px; padding: 16px 16px 12px; margin-bottom: 20px; }
+  .banner h3 { font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 2px; color: var(--gold); margin-bottom: 8px; }
+  .banner ul { padding-left: 18px; font-size: 16px; line-height: 1.5; }
+  .banner button { margin-top: 10px; }
+
+  /* Cards */
+  .card { background: linear-gradient(160deg, rgba(255,248,230,0.92), rgba(245,232,200,0.72)); border: 1px solid var(--gold-line); border-radius: 16px; position: relative; margin-bottom: 18px; box-shadow: 0 2px 12px rgba(140,90,20,0.08), inset 0 1px 0 rgba(255,255,255,0.6); }
+  .card-inner { padding: 24px 20px 20px; }
+  .card-header { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 16px; }
+  .badge { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; padding: 4px 9px; border-radius: 4px; border: 1px solid currentColor; }
+  .card-num { font-family: 'Cinzel', serif; font-size: 13px; color: rgba(140,100,40,0.6); }
+  .card-title-he { font-family: 'Frank Ruhl Libre', serif; font-size: 46px; direction: rtl; text-align: center; color: #1a1208; margin-bottom: 6px; }
+  .card-title-es { font-family: 'Cinzel', serif; font-size: 12px; letter-spacing: 3px; text-align: center; text-transform: uppercase; margin-bottom: 18px; }
+  .rule { height: 1px; background: linear-gradient(90deg, transparent, var(--gold-line), transparent); margin: 16px 0; }
+  .note { font-size: 16px; font-style: italic; color: var(--ink-soft); line-height: 1.6; }
+  .note b { font-style: normal; color: var(--ink); }
+
+  /* Phrase block (formato Modeh Ani) */
+  .phrase { padding: 16px 0; border-bottom: 1px solid rgba(140,100,30,0.12); text-align: center; }
+  .phrase:last-child { border-bottom: none; }
+  .phrase .p-he { font-family: 'Frank Ruhl Libre', 'Times New Roman', serif; font-size: 32px; direction: rtl; color: #1a1208; line-height: 1.5; margin-bottom: 6px; }
+  .phrase .p-tr { font-size: 18px; font-style: italic; margin-bottom: 4px; }
+  .phrase .p-fo { font-family: 'Cinzel', serif; font-size: 14px; font-weight: 600; margin-bottom: 6px; line-height: 1.5; }
+  .phrase .p-es { font-size: 17px; font-style: italic; color: var(--ink-soft); }
+
+  /* 72 names card */
+  .letras { display: flex; flex-direction: row-reverse; justify-content: center; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
   .letra-pill { font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 1.5px; color: rgba(80,50,10,0.85); border: 1px solid rgba(140,100,30,0.5); border-radius: 4px; padding: 5px 11px; background: rgba(200,160,60,0.15); font-weight: 600; }
-
-  .heb { font-family: 'Times New Roman', serif; font-size: 86px; line-height: 1; direction: rtl; text-align: center; color: #1a1208; margin-bottom: 10px; letter-spacing: 6px; text-shadow: 0 1px 2px rgba(100,60,0,0.15); }
+  .heb72 { font-family: 'Frank Ruhl Libre', 'Times New Roman', serif; font-size: 86px; line-height: 1.1; direction: rtl; text-align: center; color: #1a1208; letter-spacing: 6px; margin-bottom: 8px; }
   .nombre { font-family: 'Cinzel', serif; font-size: 19px; letter-spacing: 5px; color: #1a1208; font-weight: 700; text-align: center; margin-bottom: 3px; }
-  .tema { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 2px; text-transform: uppercase; text-align: center; margin-bottom: 18px; }
-  .tema-gold { color: #8a6020; }
-  .tema-blue { color: #2a5878; }
-  .tema-purple { color: #5a2a8a; }
+  .tema { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; text-align: center; }
+  .subtitulo { font-size: 18px; font-weight: 500; margin-bottom: 10px; }
+  .meditacion { font-size: 17px; font-style: italic; line-height: 1.8; color: rgba(44,31,14,0.75); }
+  .salmo { margin-top: 14px; padding-left: 12px; border-left: 2px solid currentColor; font-size: 16px; font-style: italic; line-height: 1.6; }
 
-  .divider { height: 1px; margin-bottom: 16px; }
-  .divider-gold { background: linear-gradient(90deg, transparent, rgba(160,110,40,0.3), transparent); }
-  .divider-blue { background: linear-gradient(90deg, transparent, rgba(60,110,160,0.25), transparent); }
-  .divider-purple { background: linear-gradient(90deg, transparent, rgba(120,60,160,0.25), transparent); }
+  /* Controls */
+  button, select, input { font-family: 'Cinzel', serif; -webkit-appearance: none; appearance: none; }
+  .btn { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; padding: 11px 16px; border-radius: 8px; border: 1px solid rgba(140,100,30,0.45); background: rgba(200,160,60,0.14); color: #6a4a14; cursor: pointer; }
+  .btn:active { opacity: 0.7; }
+  .controls { display: flex; gap: 8px; align-items: center; justify-content: center; margin-bottom: 16px; flex-wrap: wrap; }
+  .field { width: 100%; font-size: 15px; padding: 12px 14px; border-radius: 8px; border: 1px solid rgba(140,100,30,0.4); background: rgba(255,250,238,0.9); color: var(--ink); margin-bottom: 12px; }
+  label.lbl { display: block; font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #7a5c28; margin-bottom: 6px; }
+  select.field { background-image: linear-gradient(45deg, transparent 50%, #7a5c28 50%), linear-gradient(135deg, #7a5c28 50%, transparent 50%); background-position: calc(100% - 18px) 50%, calc(100% - 12px) 50%; background-size: 6px 6px; background-repeat: no-repeat; }
 
-  .subtitulo { font-size: 17px; font-weight: 500; color: #2c1f0e; margin-bottom: 12px; line-height: 1.4; }
-  .meditacion { font-size: 16px; font-style: italic; line-height: 1.85; color: rgba(44,31,14,0.7); overflow: hidden; transition: max-height 0.45s ease; }
-  .meditacion.collapsed { max-height: 5em; }
-  .meditacion.expanded { max-height: 800px; }
+  /* Ana Bekoach */
+  .ab-line { border: 1px solid transparent; border-radius: 12px; padding: 4px 10px; margin: 0 -10px; }
+  .ab-line.today { border-color: rgba(31,95,95,0.55); background: rgba(31,95,95,0.07); }
+  .ab-day { font-family: 'Cinzel', serif; font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--teal); text-align: center; padding-top: 12px; }
+  .ab-day .tag { display: inline-block; margin-left: 6px; padding: 2px 7px; border-radius: 4px; background: var(--teal); color: #fff; font-size: 10px; }
+  .ab-combo { font-family: 'Frank Ruhl Libre', serif; font-size: 22px; direction: rtl; color: var(--teal); margin-top: 6px; }
+  .ab-combo-tr { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 1px; color: rgba(31,95,95,0.8); }
+  .status { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 18px; }
+  .stat { background: rgba(255,250,238,0.85); border: 1px solid rgba(31,95,95,0.25); border-radius: 10px; padding: 10px 12px; }
+  .stat .k { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--teal); }
+  .stat .v { font-size: 18px; font-weight: 500; line-height: 1.3; }
+  .stat .s { font-size: 14px; font-style: italic; color: var(--ink-soft); }
+  .stat.wide { grid-column: span 2; }
+  .tk-row { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 12px 0; border-bottom: 1px solid rgba(140,100,30,0.12); }
+  .tk-row:last-child { border-bottom: none; }
+  .tk-part { font-size: 16px; line-height: 1.3; }
+  .tk-part b { font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 1px; display: block; }
+  .tk-he { font-family: 'Frank Ruhl Libre', serif; font-size: 24px; direction: rtl; text-align: center; line-height: 1.45; max-width: 64%; }
 
-  .toggle-btn { background: none; border: none; font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 2px; cursor: pointer; padding: 8px 0 0; text-transform: uppercase; display: block; }
-  .toggle-gold { color: rgba(140,90,20,0.6); }
-  .toggle-blue { color: rgba(40,90,140,0.55); }
-  .toggle-purple { color: rgba(90,42,138,0.6); }
+  details { border-top: 1px solid rgba(140,100,30,0.15); }
+  details:first-of-type { border-top: none; }
+  summary { list-style: none; cursor: pointer; padding: 14px 0; display: flex; align-items: center; gap: 12px; }
+  summary::-webkit-details-marker { display: none; }
+  .pc-num { font-family: 'Cinzel', serif; font-size: 18px; color: var(--wine); width: 30px; text-align: center; flex: none; }
+  .pc-title { flex: 1; font-size: 18px; line-height: 1.3; }
+  .pc-he { font-family: 'Frank Ruhl Libre', serif; font-size: 20px; direction: rtl; color: var(--wine); flex: none; }
+  .pc-body { padding: 0 0 16px 42px; }
+  .pc-body h4 { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--wine); margin: 10px 0 4px; }
+  .pc-body p { font-size: 17px; line-height: 1.6; }
 
-  .salmo { margin-top: 14px; padding-left: 13px; font-size: 15px; font-style: italic; line-height: 1.65; display: none; }
-  .salmo.visible { display: block; }
-  .salmo-gold { border-left: 2px solid rgba(160,110,40,0.4); color: rgba(120,80,20,0.75); }
-  .salmo-blue { border-left: 2px solid rgba(60,110,160,0.35); color: rgba(40,80,130,0.7); }
-  .salmo-purple { border-left: 2px solid rgba(120,60,160,0.4); color: rgba(90,42,138,0.7); }
-
-  .sep { display: flex; align-items: center; gap: 12px; margin: 10px 0 18px; }
-  .sep-line { flex: 1; height: 1px; background: rgba(140,100,30,0.15); }
-  .sep-star { font-size: 10px; color: rgba(140,100,30,0.3); }
-
-  .footer { text-align: center; margin-top: 40px; font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 4px; color: rgba(100,70,20,0.45); text-transform: uppercase; }
-
-  @keyframes fadeDown { from { opacity:0; transform:translateY(-14px); } to { opacity:1; transform:translateY(0); } }
-  @keyframes fadeUp { from { opacity:0; transform:translateY(22px); } to { opacity:1; transform:translateY(0); } }
+  .footer { text-align: center; margin-top: 36px; font-family: 'Cinzel', serif; font-size: 12px; letter-spacing: 4px; color: rgba(100,70,20,0.45); text-transform: uppercase; }
+  .version { text-align: center; font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 2px; color: rgba(100,70,20,0.4); margin-top: 6px; }
+  .view { display: none; animation: fade 0.35s ease; }
+  .view.active { display: block; }
+  @keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
 </style>
 </head>
 <body>
 <div class="container">
 
-  <!-- HEADER -->
-  <div class="header">
-    <span class="header-star">✦</span>
-    <div class="header-title">Los 72 Nombres de Dios</div>
-    <div class="header-date" id="fecha"></div>
-    <div class="header-line"></div>
-  </div>
-
-  <!-- CARD 1: MODEH ANI -->
-  <div class="card" style="animation-delay:0s; border-color:rgba(80,140,80,0.3);">
-    <div style="position:absolute;top:0;left:15%;right:15%;height:1px;background:linear-gradient(90deg,transparent,rgba(80,140,80,0.6),transparent);"></div>
-    <div class="card-inner">
-      <div class="card-header">
-        <span class="badge badge-green">Oración del despertar</span>
-        <span class="card-num" style="font-size:14px;">מודה אני</span>
-      </div>
-      <div style="font-family:'Times New Roman',serif;font-size:48px;direction:rtl;text-align:center;color:#1a1208;letter-spacing:4px;margin-bottom:8px;">מוֹדֶה אֲנִי</div>
-      <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;color:#2a5c2a;text-align:center;margin-bottom:20px;text-transform:uppercase;">Modeh Ani · Oración de Gracias</div>
-      <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(80,140,80,0.3),transparent);margin-bottom:20px;"></div>
-
-      <!-- Frase 1 -->
-      <div style="margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid rgba(80,140,80,0.1);">
-        <div style="font-family:'Times New Roman',serif;font-size:34px;direction:rtl;text-align:center;color:#1a1208;line-height:1.4;margin-bottom:6px;">מוֹדֶה אֲנִי לְפָנֶיךָ</div>
-        <div style="font-family:'EB Garamond',serif;font-size:16px;font-style:italic;text-align:center;color:#2a5c2a;margin-bottom:3px;">Modé Ani Lefanécha</div>
-        <div style="font-family:'Cinzel',serif;font-size:14px;text-align:center;color:rgba(30,90,30,0.9);margin-bottom:6px;font-weight:600;">"mo-DÉ · a-NÍ · le-fa-NÉ-ja"</div>
-        <div style="font-family:'EB Garamond',serif;font-size:15px;text-align:center;color:rgba(44,31,14,0.6);font-style:italic;">Te doy gracias ante Ti</div>
-      </div>
-
-      <!-- Frase 2 -->
-      <div style="margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid rgba(80,140,80,0.1);">
-        <div style="font-family:'Times New Roman',serif;font-size:34px;direction:rtl;text-align:center;color:#1a1208;line-height:1.4;margin-bottom:6px;">מֶלֶךְ חַי וְקַיָּם</div>
-        <div style="font-family:'EB Garamond',serif;font-size:16px;font-style:italic;text-align:center;color:#2a5c2a;margin-bottom:3px;">Mélech Chai VeKayám</div>
-        <div style="font-family:'Cinzel',serif;font-size:14px;text-align:center;color:rgba(30,90,30,0.9);margin-bottom:6px;font-weight:600;">"MÉ-lejk · JÁI · ve-ka-YÁM"</div>
-        <div style="font-family:'EB Garamond',serif;font-size:15px;text-align:center;color:rgba(44,31,14,0.6);font-style:italic;">Rey vivo y eterno</div>
-      </div>
-
-      <!-- Frase 3 -->
-      <div style="margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid rgba(80,140,80,0.1);">
-        <div style="font-family:'Times New Roman',serif;font-size:34px;direction:rtl;text-align:center;color:#1a1208;line-height:1.4;margin-bottom:6px;">שֶׁהֶחֱזַרְתָּ בִּי נִשְׁמָתִי</div>
-        <div style="font-family:'EB Garamond',serif;font-size:16px;font-style:italic;text-align:center;color:#2a5c2a;margin-bottom:3px;">Shehechezárta Bi Nishmati</div>
-        <div style="font-family:'Cinzel',serif;font-size:14px;text-align:center;color:rgba(30,90,30,0.9);margin-bottom:6px;font-weight:600;">"she-je-jez-ÁR-ta · BI · nish-ma-TÍ"</div>
-        <div style="font-family:'EB Garamond',serif;font-size:15px;text-align:center;color:rgba(44,31,14,0.6);font-style:italic;">Que has devuelto mi alma</div>
-      </div>
-
-      <!-- Frase 4 -->
-      <div style="margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid rgba(80,140,80,0.1);">
-        <div style="font-family:'Times New Roman',serif;font-size:34px;direction:rtl;text-align:center;color:#1a1208;line-height:1.4;margin-bottom:6px;">בְּחֶמְלָה רַבָּה</div>
-        <div style="font-family:'EB Garamond',serif;font-size:16px;font-style:italic;text-align:center;color:#2a5c2a;margin-bottom:3px;">Bechemlá Rabá</div>
-        <div style="font-family:'Cinzel',serif;font-size:14px;text-align:center;color:rgba(30,90,30,0.9);margin-bottom:6px;font-weight:600;">"be-jem-LÁ · ra-BÁ"</div>
-        <div style="font-family:'EB Garamond',serif;font-size:15px;text-align:center;color:rgba(44,31,14,0.6);font-style:italic;">Con gran misericordia</div>
-      </div>
-
-      <!-- Frase 5 -->
-      <div>
-        <div style="font-family:'Times New Roman',serif;font-size:34px;direction:rtl;text-align:center;color:#1a1208;line-height:1.4;margin-bottom:6px;">אֱמוּנָתֶךָ</div>
-        <div style="font-family:'EB Garamond',serif;font-size:16px;font-style:italic;text-align:center;color:#2a5c2a;margin-bottom:3px;">Emunátecha</div>
-        <div style="font-family:'Cinzel',serif;font-size:14px;text-align:center;color:rgba(30,90,30,0.9);margin-bottom:6px;font-weight:600;">"e-mu-na-TE-ja"</div>
-        <div style="font-family:'EB Garamond',serif;font-size:15px;text-align:center;color:rgba(44,31,14,0.6);font-style:italic;">Grande es Tu fidelidad</div>
-      </div>
+  <!-- ================= INICIO ================= -->
+  <section class="view" id="v-inicio">
+    <div class="header">
+      <span class="header-star">✦</span>
+      <div class="header-title">Los 72 Nombres de Dios</div>
+      <div class="header-date" id="h-fecha"></div>
+      <div class="header-heb" id="h-heb"></div>
+      <div class="header-line"></div>
     </div>
-  </div>
+    <div id="banner"></div>
+    <nav class="menu">
+      <a class="tile wide" href="#despertar" style="border-color:rgba(80,140,80,0.4)">
+        <div class="tile-he">מוֹדֶה אֲנִי · נְטִילַת יָדַיִם</div>
+        <div class="tile-name" style="color:var(--green)">Al despertar</div>
+        <div class="tile-sub">Modeh Ani y lavado de manos</div>
+      </a>
+      <a class="tile" href="#nombre" style="border-color:rgba(60,110,160,0.4)">
+        <div class="tile-he">ע״ב</div>
+        <div class="tile-name" style="color:var(--blue)">Nombre del día</div>
+        <div class="tile-sub">Al azar o elegido</div>
+      </a>
+      <a class="tile" href="#alma" style="border-color:rgba(120,60,160,0.4)">
+        <div class="tile-he">נְשָׁמָה</div>
+        <div class="tile-name" style="color:var(--purple)">Nombre del alma</div>
+        <div class="tile-sub">Por tu nacimiento</div>
+      </a>
+      <a class="tile" href="#ana" style="border-color:rgba(31,95,95,0.4)">
+        <div class="tile-he">אָנָּא בְּכֹחַ</div>
+        <div class="tile-name" style="color:var(--teal)">Ana Bekoach</div>
+        <div class="tile-sub">Línea del día y signo</div>
+      </a>
+      <a class="tile" href="#shema" style="border-color:rgba(122,42,42,0.4)">
+        <div class="tile-he">שְׁמַע</div>
+        <div class="tile-name" style="color:var(--red)">Shemá Israel</div>
+        <div class="tile-sub">Y cómo usarlo</div>
+      </a>
+      <a class="tile wide" href="#preceptos" style="border-color:rgba(106,32,72,0.4)">
+        <div class="tile-he">י״ד פִּקּוּדִין</div>
+        <div class="tile-name" style="color:var(--wine)">14 preceptos del Zohar</div>
+        <div class="tile-sub">Explicados simple y con su aplicación práctica</div>
+      </a>
+    </nav>
+    <div class="footer">Kabbalah · Meditación Diaria</div>
+    <div class="version" id="ver"></div>
+  </section>
 
-  <div class="sep"><div class="sep-line"></div><span class="sep-star">✦</span><div class="sep-line"></div></div>
+  <!-- ================= AL DESPERTAR ================= -->
+  <section class="view" id="v-despertar">
+    <div class="topbar"><a class="back" href="#inicio">← Menú</a><div class="view-title">Al despertar</div></div>
+    <div class="card" style="border-color:rgba(80,140,80,0.35)"><div class="card-inner">
+      <div class="card-header"><span class="badge" style="color:var(--green)">1 · Al abrir los ojos</span></div>
+      <div class="card-title-he">מוֹדֶה אֲנִי</div>
+      <div class="card-title-es" style="color:var(--green)">Modeh Ani · Oración de gracias</div>
+      <div id="p-modeh"></div>
+      <div class="rule"></div>
+      <p class="note">Se dice apenas te despertás, todavía en la cama. Por eso no menciona el Nombre de Dios: las manos aún no están lavadas.</p>
+    </div></div>
+    <div class="card" style="border-color:rgba(122,42,42,0.35)"><div class="card-inner">
+      <div class="card-header"><span class="badge" style="color:var(--red)">2 · Lavado de manos</span></div>
+      <div class="card-title-he">נְטִילַת יָדַיִם</div>
+      <div class="card-title-es" style="color:var(--red)">Al Netilat Iadáim · Bendición del agua</div>
+      <p class="note" style="margin-bottom:6px"><b>Cómo:</b> tomá un recipiente con agua y volcá sobre la mano derecha y luego la izquierda, alternando, tres veces cada una. Después decí la bendición.</p>
+      <div id="p-netilat"></div>
+    </div></div>
+  </section>
 
-  <!-- CARD 2: ALEATORIO -->
-  <div class="card" id="card-random" style="animation-delay:0.3s; border-color:rgba(60,110,160,0.3);">
-    <div style="position:absolute;top:0;left:15%;right:15%;height:1px;background:linear-gradient(90deg,transparent,rgba(60,110,180,0.6),transparent);"></div>
-    <div class="card-inner" id="random-inner"></div>
-  </div>
-
-  <div class="sep"><div class="sep-line"></div><span class="sep-star">✦</span><div class="sep-line"></div></div>
-
-  <!-- CARD 3: NOMBRE DEL ALMA -->
-  <div class="card" style="animation-delay:0.6s; border-color:rgba(120,60,160,0.3);">
-    <div style="position:absolute;top:0;left:15%;right:15%;height:1px;background:linear-gradient(90deg,transparent,rgba(140,80,200,0.6),transparent);"></div>
-    <div class="card-inner">
-      <div class="card-header">
-        <span class="badge badge-purple">Tu nombre del alma</span>
-        <span class="card-num" id="birth-num">—</span>
-      </div>
-
-      <!-- Input -->
-      <div id="birth-input-section">
-        <div style="font-family:'EB Garamond',serif;font-size:16px;font-style:italic;color:rgba(44,31,14,0.6);margin-bottom:20px;line-height:1.7;text-align:center;">
-          Ingresá tu fecha de nacimiento para encontrar el Nombre que rige tu alma según el calendario hebreo.
-        </div>
-        <div style="text-align:center;">
-          <input type="date" id="birth-date" max="2010-12-31" min="1900-01-01"
-            style="font-family:'Cinzel',serif;font-size:14px;padding:12px 16px;border-radius:8px;border:1px solid rgba(120,60,160,0.3);background:rgba(140,80,200,0.06);color:#2c1f0e;width:100%;max-width:220px;outline:none;-webkit-appearance:none;display:block;margin:0 auto 14px;">
-          <button onclick="calcularNombre()" style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;text-transform:uppercase;padding:11px 28px;border-radius:8px;border:1px solid rgba(120,60,160,0.4);background:rgba(140,80,200,0.1);color:#5a2a8a;cursor:pointer;-webkit-appearance:none;">
-            Revelar mi nombre
-          </button>
-        </div>
-      </div>
-
-      <!-- Resultado -->
-      <div id="birth-result" style="display:none;">
-        <div class="divider divider-purple"></div>
-        <div id="res-letras" class="letras"></div>
-        <div id="res-heb" class="heb"></div>
-        <div id="res-name" class="nombre"></div>
-        <div id="res-tema" class="tema tema-purple"></div>
-        <div class="divider divider-purple"></div>
-        <div id="res-subtitulo" class="subtitulo"></div>
-        <div id="res-med" class="meditacion collapsed"></div>
-        <button class="toggle-btn toggle-purple" onclick="toggleBirth()">▼ leer más</button>
-        <div id="res-salmo" class="salmo salmo-purple"></div>
-        <div style="margin-top:14px;text-align:center;">
-          <div id="res-cal" style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;color:rgba(90,42,138,0.4);margin-bottom:10px;"></div>
-          <button onclick="resetNombre()" style="font-family:'Cinzel',serif;font-size:9px;letter-spacing:2px;text-transform:uppercase;background:none;border:none;color:rgba(90,42,138,0.4);cursor:pointer;">↩ cambiar fecha</button>
-        </div>
-      </div>
+  <!-- ================= NOMBRE DEL DÍA ================= -->
+  <section class="view" id="v-nombre">
+    <div class="topbar"><a class="back" href="#inicio">← Menú</a><div class="view-title">Nombre del día</div></div>
+    <div class="controls">
+      <button class="btn" onclick="stepName(-1)" aria-label="Anterior">◀</button>
+      <select class="field" id="name-select" style="width:auto;margin:0;flex:1" onchange="showName(+this.value)"></select>
+      <button class="btn" onclick="stepName(1)" aria-label="Siguiente">▶</button>
     </div>
-  </div>
+    <div class="controls"><button class="btn" onclick="showName(randomName())">🎲 Otro al azar</button></div>
+    <div class="card" style="border-color:rgba(60,110,160,0.35)"><div class="card-inner" id="name-card"></div></div>
+  </section>
 
-
-  <div class="sep"><div class="sep-line"></div><span class="sep-star">✦</span><div class="sep-line"></div></div>
-
-  <!-- CARD 4: NETILAT YADAIM -->
-  <div class="card" style="animation-delay:0.9s; border-color:rgba(140,60,60,0.3);">
-    <div style="position:absolute;top:0;left:15%;right:15%;height:1px;background:linear-gradient(90deg,transparent,rgba(180,80,80,0.6),transparent);"></div>
-    <div class="card-inner">
-      <div class="card-header">
-        <span class="badge" style="color:#7a2a2a;border:1px solid rgba(160,80,80,0.4);background:rgba(180,80,80,0.08);">Bendición del lavado de manos</span>
-        <span class="card-num" style="font-size:13px;">נטילת ידיים</span>
+  <!-- ================= NOMBRE DEL ALMA ================= -->
+  <section class="view" id="v-alma">
+    <div class="topbar"><a class="back" href="#inicio">← Menú</a><div class="view-title">Nombre del alma</div></div>
+    <div class="card" style="border-color:rgba(120,60,160,0.35)"><div class="card-inner">
+      <div id="alma-form">
+        <p class="note" style="margin-bottom:18px">Calculamos el Nombre según tu fecha de nacimiento en el calendario hebreo, contando desde el 1 de Nisán. El día hebreo empieza al atardecer, por eso la hora importa.</p>
+        <label class="lbl" for="b-date">Fecha de nacimiento</label>
+        <input class="field" type="date" id="b-date" min="1900-01-01" max="2030-12-31">
+        <label class="lbl" for="b-time">Hora (opcional)</label>
+        <input class="field" type="time" id="b-time">
+        <label class="lbl" for="b-city">Ciudad de nacimiento</label>
+        <select class="field" id="b-city"></select>
+        <p class="note" style="font-size:14px;margin:-4px 0 16px">Si no sabés la hora, asumimos que naciste de día.</p>
+        <div style="text-align:center"><button class="btn" onclick="calcAlma()">Revelar mi nombre</button></div>
       </div>
-      <div style="font-family:'Times New Roman',serif;font-size:48px;direction:rtl;text-align:center;color:#1a1208;letter-spacing:4px;margin-bottom:8px;">נְטִילַת יָדַיִם</div>
-      <div style="font-family:'Cinzel',serif;font-size:10px;letter-spacing:3px;color:#7a2a2a;text-align:center;margin-bottom:20px;text-transform:uppercase;">Al Netilat Iadáim · Bendición del agua</div>
-      <div style="height:1px;background:linear-gradient(90deg,transparent,rgba(160,80,80,0.3),transparent);margin-bottom:20px;"></div>
+      <div id="alma-result" style="display:none"></div>
+    </div></div>
+  </section>
 
-      <!-- Frase 1 -->
-      <div style="margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid rgba(160,80,80,0.1);">
-        <div style="font-family:'Times New Roman',serif;font-size:34px;direction:rtl;text-align:center;color:#1a1208;line-height:1.4;margin-bottom:6px;">בָּרוּךְ אַתָּה יְהֹוָה</div>
-        <div style="font-family:'EB Garamond',serif;font-size:16px;font-style:italic;text-align:center;color:#7a2a2a;margin-bottom:3px;">Barúj Atá Adonái</div>
-        <div style="font-family:'Cinzel',serif;font-size:14px;text-align:center;color:rgba(140,50,50,0.9);margin-bottom:4px;font-weight:600;">"ba-RÚJ · a-TÁ · a-do-NÁI"</div>
-        <div style="font-family:'EB Garamond',serif;font-size:15px;text-align:center;color:rgba(44,31,14,0.6);font-style:italic;">Bendito eres Tú, Señor</div>
+  <!-- ================= ANA BEKOACH ================= -->
+  <section class="view" id="v-ana">
+    <div class="topbar"><a class="back" href="#inicio">← Menú</a><div class="view-title">Ana Bekoach</div></div>
+    <div class="status" id="ana-status"></div>
+    <div class="card" style="border-color:rgba(31,95,95,0.35)"><div class="card-inner">
+      <div class="card-header"><span class="badge" style="color:var(--teal)">Nombre de 42 letras</span></div>
+      <div class="card-title-he">אָנָּא בְּכֹחַ</div>
+      <div class="card-title-es" style="color:var(--teal)">7 líneas · una por día de la semana</div>
+      <p class="note" style="text-align:center;margin-bottom:6px">Se recitan las 7 líneas. La línea marcada es la del día de hoy: meditá un momento más en ella.</p>
+      <div id="ana-lines"></div>
+      <div class="rule"></div>
+      <div class="phrase">
+        <div class="ab-day">Baruj Shem · se susurra</div>
+        <div class="p-he">בָּרוּךְ שֵׁם כְּבוֹד מַלְכוּתוֹ לְעוֹלָם וָעֶד</div>
+        <div class="p-tr" style="color:var(--teal)">Baruj shem quevod maljutó leolam vaed</div>
+        <div class="p-fo" style="color:rgba(20,80,80,0.9)">"ba-RÚJ · SHEM · que-VOD · mal-ju-TÓ · le-o-LAM · va-ED"</div>
+        <div class="p-es">Bendito sea el nombre de la gloria de Su reino por siempre jamás</div>
       </div>
+    </div></div>
+    <div class="card" style="border-color:rgba(31,95,95,0.35)"><div class="card-inner" id="ana-angels"></div></div>
+    <div class="card" style="border-color:rgba(31,95,95,0.35)"><div class="card-inner">
+      <div class="card-header"><span class="badge" style="color:var(--teal)">Tikún HaNéfesh</span><span class="card-num he">תיקון הנפש</span></div>
+      <p class="note" style="margin-bottom:8px">Meditación de sanación. Recorré cada parte del cuerpo con la vista y la intención, empezando por la cabeza. <b>Estos Nombres se escanean con la vista, no se pronuncian.</b></p>
+      <div id="tikun"></div>
+    </div></div>
+  </section>
 
-      <!-- Frase 2 -->
-      <div style="margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid rgba(160,80,80,0.1);">
-        <div style="font-family:'Times New Roman',serif;font-size:34px;direction:rtl;text-align:center;color:#1a1208;line-height:1.4;margin-bottom:6px;">אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם</div>
-        <div style="font-family:'EB Garamond',serif;font-size:16px;font-style:italic;text-align:center;color:#7a2a2a;margin-bottom:3px;">Elohéinu Mélej Haolám</div>
-        <div style="font-family:'Cinzel',serif;font-size:14px;text-align:center;color:rgba(140,50,50,0.9);margin-bottom:4px;font-weight:600;">"e-lo-HÉI-nu · MÉ-lejk · ha-o-LÁM"</div>
-        <div style="font-family:'EB Garamond',serif;font-size:15px;text-align:center;color:rgba(44,31,14,0.6);font-style:italic;">Nuestro Dios, Rey del universo</div>
-      </div>
+  <!-- ================= SHEMÁ ================= -->
+  <section class="view" id="v-shema">
+    <div class="topbar"><a class="back" href="#inicio">← Menú</a><div class="view-title">Shemá Israel</div></div>
+    <div class="card" style="border-color:rgba(122,42,42,0.35)"><div class="card-inner">
+      <div class="card-header"><span class="badge" style="color:var(--red)">Declaración de unidad</span></div>
+      <div class="card-title-he">שְׁמַע יִשְׂרָאֵל</div>
+      <div class="card-title-es" style="color:var(--red)">Shemá Israel</div>
+      <div id="p-shema"></div>
+    </div></div>
+    <div class="card" style="border-color:rgba(122,42,42,0.35)"><div class="card-inner">
+      <div class="card-header"><span class="badge" style="color:var(--red)">Cómo usarlo</span></div>
+      <p class="note" style="margin-bottom:12px"><b>Qué es.</b> Es la frase central de la tradición: afirma que todo lo que existe viene de una sola Fuente. La Kabbalah lo usa para pasar de la sensación de separación a la de unidad.</p>
+      <p class="note" style="margin-bottom:12px"><b>Cuándo.</b> A la mañana, a la noche y antes de dormir. También en momentos de miedo o confusión, cuando todo parece fragmentado.</p>
+      <p class="note" style="margin-bottom:12px"><b>Cómo.</b> Tapate los ojos con la mano derecha para cortar las distracciones. Decilo despacio, palabra por palabra. Alargá la última palabra, <i>Ejad</i> (uno), con la intención de que no hay nada fuera de esa unidad.</p>
+      <p class="note"><b>Para qué.</b> Para recordar, en el momento en que te sentís solo o dividido, que estás conectado a algo más grande. No es pedir algo: es reconocer.</p>
+    </div></div>
+  </section>
 
-      <!-- Frase 3 -->
-      <div style="margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid rgba(160,80,80,0.1);">
-        <div style="font-family:'Times New Roman',serif;font-size:34px;direction:rtl;text-align:center;color:#1a1208;line-height:1.4;margin-bottom:6px;">אֲשֶׁר קִדְּשָׁנוּ בְּמִצְוֹתָיו</div>
-        <div style="font-family:'EB Garamond',serif;font-size:16px;font-style:italic;text-align:center;color:#7a2a2a;margin-bottom:3px;">Ashér Kideshánu Bemitzvotáv</div>
-        <div style="font-family:'Cinzel',serif;font-size:14px;text-align:center;color:rgba(140,50,50,0.9);margin-bottom:4px;font-weight:600;">"a-SHÉR · ki-de-SHÁN-u · be-mitz-vo-TÁV"</div>
-        <div style="font-family:'EB Garamond',serif;font-size:15px;text-align:center;color:rgba(44,31,14,0.6);font-style:italic;">Que nos santificó con Sus mandamientos</div>
-      </div>
+  <!-- ================= PRECEPTOS ================= -->
+  <section class="view" id="v-preceptos">
+    <div class="topbar"><a class="back" href="#inicio">← Menú</a><div class="view-title">14 preceptos</div></div>
+    <div class="card" style="border-color:rgba(106,32,72,0.35)"><div class="card-inner">
+      <div class="card-header"><span class="badge" style="color:var(--wine)">Zohar · Prólogo</span></div>
+      <p class="note" style="margin-bottom:10px">El Zohar abre con 14 preceptos que considera la base de todo. Tocá cada uno para ver su explicación simple y cómo aplicarlo hoy.</p>
+      <div id="preceptos"></div>
+    </div></div>
+  </section>
 
-      <!-- Frase 4 -->
-      <div>
-        <div style="font-family:'Times New Roman',serif;font-size:34px;direction:rtl;text-align:center;color:#1a1208;line-height:1.4;margin-bottom:6px;">וְצִוָּנוּ עַל נְטִילַת יָדָיִם</div>
-        <div style="font-family:'EB Garamond',serif;font-size:16px;font-style:italic;text-align:center;color:#7a2a2a;margin-bottom:3px;">Vetzivánu Al Netilát Iadáim</div>
-        <div style="font-family:'Cinzel',serif;font-size:14px;text-align:center;color:rgba(140,50,50,0.9);margin-bottom:4px;font-weight:600;">"ve-tzi-VÁ-nu · AL · ne-ti-LÁT · ia-DÁ-im"</div>
-        <div style="font-family:'EB Garamond',serif;font-size:15px;text-align:center;color:rgba(44,31,14,0.6);font-style:italic;">Y nos ordenó sobre el lavado de manos</div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="footer">Kabbalah · Meditación Diaria</div>
 </div>
 
 <script>
-const NOMBRES = [
-  { n:1, heb:"והו", name:"VEHUIAH", letras:"VAV · HEI · VAV", tema:"Regresando en el tiempo", subtitulo:"Cómo corregir el pasado", meditacion:"Despierta en tu corazón el sentimiento de las malas acciones del pasado. Acepta la sincera verdad espiritual de que tus problemas actuales son el resultado de acciones pasadas. Al concentrarte en este Nombre, erradicas las semillas negativas que ya se han plantado. Al hacerlo, transformas tu pasado, remodelas tu presente y te aseguras un futuro lleno de alegría y plenitud.", salmo:"Salmo 3 — Acabo de levantar mi voz al Señor y Él me responde desde su santo monte." },
-  { n:2, heb:"ילי", name:"JELIEL", letras:"YOD · LAM · YOD", tema:"Rescate de la chispa", subtitulo:"Reavivar la llama interior", meditacion:"Hay una chispa divina en ti que ninguna oscuridad puede apagar. Este Nombre activa esa llama cuando sientes que se ha extinguido. Cuando la pasión, el propósito o la fe parecen haberte abandonado, Jeliel restaura la conexión con tu fuente original. Concéntrate en las letras y siente cómo algo en tu interior vuelve a encenderse con fuerza renovada.", salmo:"Salmo 22 — Tú eres quien me sacó del vientre, el que me hizo confiar desde los pechos de mi madre." },
-  { n:3, heb:"סיט", name:"SITAEL", letras:"SAMEJ · YOD · TET", tema:"Creando milagros", subtitulo:"Construir lo imposible", meditacion:"Los milagros no son excepciones a las leyes del universo, son la expresión más alta de ellas. Sitael te otorga la capacidad de manifestar lo que parece inalcanzable. Al contemplar este Nombre, activas la frecuencia de la creación pura. Todo proyecto, sueño o necesidad que llevas en tu corazón puede encontrar su camino a la realidad cuando operas desde esta vibración.", salmo:"Salmo 91 — Te libraré y te glorificaré, te colmaré con larga vida y te mostraré mi salvación." },
-  { n:4, heb:"עלמ", name:"ELEMIAH", letras:"AYIN · LAM · MEM", tema:"Eliminando pensamientos negativos", subtitulo:"Limpiar el campo mental", meditacion:"La mente es un campo de siembra. Cada pensamiento negativo que permites crecer se convierte en una raíz que drena tu energía vital. Elemiah actúa como un purificador del espacio mental, disolviendo patrones de pensamiento autodestructivos que has acumulado. Usa este Nombre cuando sientas que tu mente trabaja en tu contra, transformando el caos interior en claridad.", salmo:"Salmo 6 — Apártate de mí, todos los que hacéis iniquidad, porque el Señor ha oído la voz de mi llanto." },
-  { n:5, heb:"מהש", name:"MAHASIAH", letras:"MEM · HEI · SHIN", tema:"Cura", subtitulo:"Sanar desde la raíz", meditacion:"La verdadera curación no comienza en el cuerpo sino en el origen espiritual de la enfermedad. Mahasiah trabaja en las capas más profundas de tu ser, donde las heridas emocionales y kármicas se manifiestan como dolencia física. Al contemplar estas letras, invitas una corriente de luz sanadora que fluye hacia donde más se necesita. La salud es tu estado natural; este Nombre te ayuda a regresar a él.", salmo:"Salmo 34 — Muchas son las aflicciones del justo, pero de todas ellas lo librará el Señor." },
-  { n:6, heb:"ללה", name:"LELAHEL", letras:"LAM · LAM · HEI", tema:"Sueños", subtitulo:"El portal de la noche", meditacion:"Mientras duermes, tu alma viaja y recibe mensajes que tu mente consciente no puede procesar. Lelahel abre el canal de comunicación entre el mundo de los sueños y tu vida cotidiana. Antes de dormir, contempla estas letras con la intención de recibir guía. Al despertar, los mensajes que traes contigo cobran sentido y se convierten en brújula para tus decisiones.", salmo:"Salmo 57 — Mi corazón está firme, oh Dios, mi corazón está firme; cantaré y entonaré salmos." },
-  { n:7, heb:"אכא", name:"ACHAIAH", letras:"ALEF · KAF · ALEF", tema:"Restaurando el ADN del alma", subtitulo:"Reprogramar el código original", meditacion:"Tu alma llegó a este mundo con un propósito específico codificado en su esencia más profunda. Las experiencias traumáticas, las decisiones erróneas y el peso del karma pueden distorsionar ese código original. Achaiah actúa como un restaurador del diseño original de tu alma, borrando las modificaciones no deseadas. Concéntrate en las letras y permite que tu ser más auténtico emerja.", salmo:"Salmo 103 — Él perdona todas tus iniquidades, Él sana todas tus enfermedades." },
-  { n:8, heb:"כהת", name:"CAHETEL", letras:"KAF · HEI · TAV", tema:"Sin estrés", subtitulo:"La paz que trasciende la mente", meditacion:"El estrés es la brecha entre cómo son las cosas y cómo crees que deberían ser. Cahetel cierra esa brecha no cambiando la realidad exterior, sino elevando tu perspectiva interior. Al trabajar con este Nombre, accedes a un estado de ecuanimidad donde los problemas no desaparecen pero pierden su poder sobre ti. La calma que encuentras aquí es duradera porque viene de adentro.", salmo:"Salmo 95 — Venid, adoremos y postrémonos; arrodillémonos delante del Señor nuestro Hacedor." },
-  { n:9, heb:"הזי", name:"HAZIEL", letras:"HEI · ZAYIN · YOD", tema:"Influencias angelicas", subtitulo:"Abrir el canal con lo superior", meditacion:"Estás rodeado de presencias benevolentes que desean guiarte y protegerte. Haziel abre tu percepción a estas influencias angelicales que operan constantemente a tu alrededor. No necesitas ver para creer; necesitas creer para ver. Al contemplar estas letras, afinas tu sensibilidad espiritual y comienzas a percibir la guía sutil que siempre estuvo disponible para ti.", salmo:"Salmo 25 — Los secretos del Señor son para los que le temen, y Él les hará conocer su pacto." },
-  { n:10, heb:"אלד", name:"ALADIAH", letras:"ALEF · LAM · DALET", tema:"Mirada que puede matar", subtitulo:"Protección contra la envidia", meditacion:"La envidia y el mal de ojo son formas reales de energía negativa que pueden afectar tu vida sin que lo notes. Aladiah crea un escudo de luz alrededor tuyo que neutraliza estas proyecciones antes de que lleguen a su destino. Cuando sientas que algo externo está bloqueando tu flujo natural, usa este Nombre. También te ayuda a purificar cualquier envidia que pueda existir en tu propio corazón.", salmo:"Salmo 33 — El ojo del Señor está sobre los que le temen, sobre los que esperan en su misericordia." },
-  { n:11, heb:"לאו", name:"LAUVIAH", letras:"LAM · ALEF · VAV", tema:"Eliminando las fuerzas del mal", subtitulo:"Disolver la oscuridad activa", meditacion:"Existen fuerzas que se alimentan del caos, la duda y el miedo humano. Lauviah te otorga la capacidad de identificar y neutralizar estas influencias negativas en tu vida. No se trata de luchar contra la oscuridad sino de encender la luz con tanta intensidad que no quede espacio para ella. Usa este Nombre cuando sientas presencias o situaciones que drenan tu energía vital.", salmo:"Salmo 18 — El Señor es mi roca, mi fortaleza y mi libertador; mi Dios, mi fuerza en quien confío." },
-  { n:12, heb:"ההע", name:"HAHAIAH", letras:"HEI · HEI · AYIN", tema:"Amor incondicional", subtitulo:"El amor que no pide nada", meditacion:"El amor incondicional es la fuerza más transformadora del universo. Hahaiah te conecta con esta frecuencia que trasciende las condiciones, expectativas y miedos que normalmente acompañan al amor humano. Al trabajar con este Nombre, sanas las heridas que te impiden amar y ser amado plenamente. Permite que este amor fluya primero hacia ti mismo, y desde ahí hacia todos los demás.", salmo:"Salmo 89 — Para siempre le guardaré mi misericordia, y mi pacto será firme con él." },
-  { n:13, heb:"יזל", name:"IEZALEL", letras:"YOD · ZAYIN · LAM", tema:"Paraíso en la tierra", subtitulo:"Manifestar el cielo aquí", meditacion:"El paraíso no es un lugar al que vas después de morir; es un estado que puedes crear aquí y ahora. Iezalel te enseña a reconocer y amplificar los momentos de gracia, belleza y plenitud en tu vida cotidiana. Cada instante contiene la posibilidad del cielo. Al contemplar estas letras, entrenas tu percepción para ver lo divino en lo ordinario y transformar tu realidad desde adentro.", salmo:"Salmo 65 — Tú coronas el año con tus bienes, y tus nubes destilan abundancia." },
-  { n:14, heb:"מבה", name:"MEBAEL", letras:"MEM · BET · HEI", tema:"Adiós a la guerra", subtitulo:"Terminar los conflictos internos", meditacion:"La guerra más devastadora es la que libras dentro de ti mismo. Mebael trabaja en la reconciliación de las partes opuestas de tu ser: la sombra y la luz, el miedo y el amor, el pasado y el futuro. Cuando dejas de pelear contigo mismo, los conflictos externos también comienzan a resolverse. Este Nombre te guía hacia la paz interior que es la base de toda paz exterior.", salmo:"Salmo 120 — En mi angustia clamé al Señor, y Él me respondió." },
-  { n:15, heb:"הרי", name:"HARIEL", letras:"HEI · RESH · YOD", tema:"Visión de largo alcance", subtitulo:"Ver más allá del presente", meditacion:"La mayoría de las decisiones erróneas vienen de ver solo lo inmediato sin considerar las consecuencias a largo plazo. Hariel expande tu horizonte temporal y espiritual, permitiéndote ver el panorama completo de una situación. Antes de tomar decisiones importantes, contempla este Nombre. Te ayuda a distinguir lo urgente de lo importante y a actuar desde una perspectiva más elevada.", salmo:"Salmo 27 — Una cosa he demandado al Señor, ésta buscaré: que esté yo en la casa del Señor todos los días de mi vida." },
-  { n:16, heb:"הקמ", name:"HEKAMIAH", letras:"HEI · KUF · MEM", tema:"Salir de la depresión", subtitulo:"Ascender desde el fondo", meditacion:"La depresión es una desconexión de la fuente de vida que existe en tu interior. Hekamiah actúa como un cable conductor que restablece esa conexión cuando parece haberse cortado. No luches contra la oscuridad; simplemente enciende la luz de este Nombre. Al contemplar estas letras con intención, activas corrientes de energía vital que comienzan a disolver la pesadez desde adentro hacia afuera.", salmo:"Salmo 88 — Señor, Dios de mi salvación, día y noche clamo delante de ti." },
-  { n:17, heb:"לאו", name:"LAUVIAH II", letras:"LAM · ALEF · VAV", tema:"Liberación interior", subtitulo:"Romper las cadenas invisibles", meditacion:"Las prisiones más difíciles de escapar son las que construimos con nuestros propios pensamientos y creencias. Lauviah trabaja en la liberación de los patrones mentales que te mantienen atrapado en ciclos repetitivos. Identifica una creencia limitante que cargas hoy y entrégasela a este Nombre. La libertad verdadera comienza cuando te das cuenta de que siempre tuviste la llave.", salmo:"Salmo 116 — Preciosa es a los ojos del Señor la muerte de sus santos." },
-  { n:18, heb:"כלי", name:"CALIEL", letras:"KAF · LAM · YOD", tema:"Fertilidad", subtitulo:"Crear nueva vida", meditacion:"La fertilidad no se limita al plano físico; incluye la capacidad de dar vida a ideas, proyectos, relaciones y sueños. Caliel activa la energía creadora en todos los niveles de tu ser. Si buscas concebir un hijo, comenzar un proyecto o simplemente renovar tu entusiasmo por la vida, este Nombre es tu aliado. La creación es tu naturaleza más profunda; permítete expresarla plenamente.", salmo:"Salmo 113 — Él hace habitar en familia a la estéril, que se goza en ser madre de hijos." },
-  { n:19, heb:"לוו", name:"LEUVIAH", letras:"LAM · VAV · VAV", tema:"Hablar con Dios", subtitulo:"La oración que es escuchada", meditacion:"La oración no es un monólogo sino un diálogo. Leuviah abre el canal bidireccional entre tu alma y la fuente divina, permitiéndote no solo enviar sino también recibir. Cuando contemplas este Nombre, tu oración trasciende las palabras y se convierte en una sintonía de frecuencias. Aprende a escuchar en el silencio que sigue a tus palabras; ahí es donde las respuestas llegan.", salmo:"Salmo 65 — A ti será hecha la oración, oh Dios que oyes la oración." },
-  { n:20, heb:"פהל", name:"PAHALIAH", letras:"PEH · HEI · LAM", tema:"Superando adicciones", subtitulo:"Liberar el apego compulsivo", meditacion:"Toda adicción es un intento desesperado de llenar un vacío espiritual con algo material. Pahaliah trabaja en identificar y sanar ese vacío en su origen, quitando el poder que la sustancia o comportamiento tiene sobre ti. La libertad no viene de la fuerza de voluntad sino de encontrar algo más poderoso que llene lo que la adicción prometía llenar. Este Nombre es ese algo más poderoso.", salmo:"Salmo 18 — Me libró de mi poderoso enemigo, y de los que me aborrecían, pues eran más fuertes que yo." },
-  { n:21, heb:"נלכ", name:"NELCHAEL", letras:"NUN · LAM · KAF", tema:"Erradicando la plaga", subtitulo:"Eliminar el mal en su raíz", meditacion:"Hay situaciones en la vida que se repiten una y otra vez porque no hemos llegado a su raíz. Nelchael te da la capacidad de ver y eliminar la causa profunda de los problemas recurrentes, ya sean enfermedades, conflictos o patrones de fracaso. No te conformes con tratar los síntomas; usa este Nombre para llegar al origen y erradicarlo de una vez por todas.", salmo:"Salmo 31 — Sácame de la red que han escondido para mí, pues tú eres mi refugio." },
-  { n:22, heb:"ייי", name:"YEIAIEL", letras:"YOD · YOD · YOD", tema:"Salir de la atracción fatal", subtitulo:"Liberarse del amor destructivo", meditacion:"Algunas relaciones nos atraen con una fuerza magnética que desafía la razón, aunque sepamos que nos hacen daño. Yeiaiel trabaja en disolver ese vínculo kármico que te mantiene atado a personas o situaciones que drenan tu vida. No se trata de dejar de amar, sino de recuperar tu libertad. Al contemplar estas letras, activas tu discernimiento para distinguir el amor verdadero de la dependencia disfrazada.", salmo:"Salmo 121 — El Señor te guardará de todo mal; Él guardará tu alma." },
-  { n:23, heb:"מלה", name:"MELAHEL", letras:"MEM · LAM · HEI", tema:"Compartiendo la llama", subtitulo:"Encender a otros con tu luz", meditacion:"Tu crecimiento espiritual no es solo para ti; la luz que acumulas está destinada a ser compartida. Melahel activa en ti el don de inspirar y elevar a quienes te rodean sin que pierdas tu propia energía en el proceso. Hay personas en tu entorno que esperan la chispa que solo tú puedes darles. Contempla este Nombre y permite que tu presencia se convierta en un regalo para el mundo.", salmo:"Salmo 89 — Bienaventurado el pueblo que sabe aclamarte; andará, oh Señor, a la luz de tu rostro." },
-  { n:24, heb:"וזה", name:"HAHEUIAH", letras:"VAV · ZAYIN · HEI", tema:"Terminar los celos", subtitulo:"Disolver la comparación corrosiva", meditacion:"Los celos nacen de la creencia de que la abundancia de otro disminuye la tuya. Haheuiah te enseña que el universo tiene suficiente para todos y que el éxito ajeno no bloquea el tuyo. Al contemplar estas letras, sanas la herida de la comparación y abres tu corazón a la genuina alegría por el bien de los demás. Lo que celebras en otros, lo atraes hacia ti.", salmo:"Salmo 69 — Que te alaben los cielos y la tierra, los mares y todo lo que se mueve en ellos." },
-  { n:25, heb:"נתה", name:"NITH-HAIAH", letras:"NUN · TAV · HEI", tema:"Hablando la verdad", subtitulo:"El poder de la palabra honesta", meditacion:"Cada vez que dices una mentira, pequeña o grande, creas una fractura en tu integridad que drena tu energía vital. Nith-Haiah te da el valor y la claridad para hablar tu verdad incluso cuando es difícil. La honestidad no es solo una virtud moral; es una práctica espiritual que mantiene tu campo energético limpio y alineado. Contempla este Nombre cuando necesites decir algo importante con claridad y amor.", salmo:"Salmo 15 — El que habla verdad en su corazón, el que no calumnia con su lengua." },
-  { n:26, heb:"האא", name:"HAAIAH", letras:"HEI · ALEF · ALEF", tema:"Orden del caos", subtitulo:"Encontrar el patrón oculto", meditacion:"Lo que parece caos siempre contiene un orden superior esperando ser descubierto. Haaiah te otorga la capacidad de ver la estructura divina detrás de los eventos aparentemente aleatorios o caóticos de tu vida. Cuando todo parece derrumbarse sin sentido, este Nombre activa tu percepción para encontrar el hilo conductor. El caos es siempre el preludio de un orden más elevado.", salmo:"Salmo 111 — Ha dado alimento a los que le temen; para siempre se acordará de su pacto." },
-  { n:27, heb:"ירת", name:"YERATHEL", letras:"YOD · RESH · TAV", tema:"La mejor asociación", subtitulo:"Atraer al socio correcto", meditacion:"Las asociaciones correctas pueden multiplicar exponencialmente tu capacidad de impacto y realización. Yerathel actúa como un imán que atrae hacia ti a las personas cuyas energías, habilidades y valores se complementan con los tuyos. Antes de iniciar una sociedad, negocio o colaboración importante, contempla este Nombre. También ayuda a sanar y fortalecer las asociaciones existentes que vale la pena preservar.", salmo:"Salmo 3 — La salvación pertenece al Señor; sobre tu pueblo sea tu bendición." },
-  { n:28, heb:"שאה", name:"SEHEIAH", letras:"SHIN · ALEF · HEI", tema:"Alma gemela", subtitulo:"Encontrar tu complemento perfecto", meditacion:"El alma gemela no es una fantasía romántica; es una realidad espiritual. Existe alguien en este mundo cuya frecuencia resuena de manera única con la tuya. Seheiah trabaja en dos direcciones: prepara tu campo energético para recibir esa conexión y guía tus pasos para que los caminos se crucen. Pero primero, te ayuda a ser la persona que tu alma gemela está buscando.", salmo:"Salmo 128 — Tu mujer será como vid que lleva fruto a los lados de tu casa." },
-  { n:29, heb:"ריי", name:"REIYEL", letras:"RESH · YOD · YOD", tema:"Eliminando el odio", subtitulo:"Disolver el veneno de la rabia", meditacion:"El odio es un veneno que bebes tú esperando que enferme el otro. Reiyel trabaja en las capas profundas donde el resentimiento se ha instalado como una toxina que contamina tu vida desde adentro. No se trata de aprobar lo que otros hicieron; se trata de liberarte del peso que cargas innecesariamente. Al contemplar este Nombre, inicias un proceso de liberación que te devuelve tu energía vital.", salmo:"Salmo 97 — Los que amáis al Señor, aborreced el mal; Él guarda las almas de sus santos." },
-  { n:30, heb:"אומ", name:"OMAEL", letras:"ALEF · VAV · MEM", tema:"Reconstrucción de puentes", subtitulo:"Sanar relaciones rotas", meditacion:"Algunas de las relaciones más importantes de tu vida han sido dañadas por malentendidos, palabras hirientes o traiciones. Omael actúa como un puente de luz entre corazones separados, creando las condiciones para la reconciliación genuina. No trabaja en la superficie sino en el nivel del alma, donde la herida realmente ocurrió. Si hay alguien con quien deseas restaurar el vínculo, este Nombre es tu aliado.", salmo:"Salmo 133 — ¡Mirad cuán bueno y cuán delicioso es habitar los hermanos juntos en armonía!" },
-  { n:31, heb:"לכב", name:"LECABEL", letras:"LAM · KAF · BET", tema:"Completa lo que empezó", subtitulo:"La energía del cierre", meditacion:"La incapacidad de completar lo que se empieza dispersa tu energía y crea una carga invisible que pesa más con cada proyecto abandonado. Lecabel te da la persistencia, el enfoque y la energía necesarios para cruzar la línea de llegada. Piensa en algo importante que has dejado incompleto. Contempla estas letras y siente cómo una corriente de energía renovada fluye hacia esa tarea.", salmo:"Salmo 119 — Eterno es el fundamento de tu palabra, y justo el juicio de tu justicia." },
-  { n:32, heb:"ושר", name:"VASARIAH", letras:"VAV · SHIN · RESH", tema:"Recuerda el aprendizaje", subtitulo:"Activar la memoria del alma", meditacion:"Tu alma ha acumulado sabiduría a lo largo de muchas vidas que espera ser recordada y utilizada. Vasariah activa esa memoria profunda, haciendo accesible el conocimiento que ya posees pero que tu mente consciente no puede alcanzar sola. Cuando estudias, aprendes o necesitas acceder a una comprensión más profunda de algo, contempla este Nombre. La sabiduría que buscas ya vive en ti.", salmo:"Salmo 119 — De tus mandamientos he adquirido inteligencia; por tanto, he aborrecido todo camino de mentira." },
-  { n:33, heb:"יוח", name:"YEHUIAH", letras:"YOD · VAV · HET", tema:"Reconozca su negatividad", subtitulo:"Ver tu propia sombra", meditacion:"El primer paso hacia la transformación es la honesta observación de tus propios patrones negativos. Yehuiah te da el valor y la claridad para mirar sin juicio las partes de ti mismo que normalmente prefieres ignorar. Esta no es una práctica de autoflagelación sino de autoconocimiento compasivo. Lo que no puedes ver, no puedes cambiar. Lo que puedes ver con amor, ya está a mitad de camino de ser transformado.", salmo:"Salmo 94 — El Señor conoce los pensamientos de los hombres, que son vanidad." },
-  { n:34, heb:"להו", name:"LEHAHIAH", letras:"LAM · HEI · VAV", tema:"Sin ego", subtitulo:"Disolver la ilusión del yo separado", meditacion:"El ego es la ilusión de estar separado del todo. Esta ilusión es la fuente de la mayoría del sufrimiento humano. Lehahiah trabaja en disolver gradualmente esa membrana que te hace sentir aislado del universo y de los demás. No se trata de aniquilar tu individualidad sino de descubrir que eres simultáneamente una ola única y el océano completo. La humildad genuina que emerge de esta comprensión es liberadora.", salmo:"Salmo 131 — Señor, no se ha envanecido mi corazón, ni mis ojos se enaltecieron." },
-  { n:35, heb:"כוק", name:"CHAVAKIAH", letras:"KAF · VAV · KUF", tema:"Energía sexual", subtitulo:"Canalizar la fuerza creadora", meditacion:"La energía sexual es la expresión más densa de la fuerza creadora del universo. Chavakiah te enseña a trabajar conscientemente con esta energía, canalizándola hacia la creación, la sanación y la elevación espiritual sin suprimirla ni desperdiciarla. Cuando esta fuerza es honrada y dirigida con conciencia, se convierte en el combustible más poderoso para tu transformación personal y tu capacidad de manifestar.", salmo:"Salmo 51 — Crea en mí, oh Dios, un corazón limpio, y renueva un espíritu recto dentro de mí." },
-  { n:36, heb:"מנד", name:"MENADEL", letras:"MEM · NUN · DALET", tema:"Sin miedo", subtitulo:"Actuar a pesar del miedo", meditacion:"El miedo es una ilusión proyectada desde el futuro hacia el presente. Menadel no elimina el miedo de golpe sino que te da la capacidad de actuar a pesar de él. El valor no es la ausencia de miedo; es decidir que algo importa más que el miedo que sientes. Al contemplar este Nombre antes de enfrentar algo que te atemoriza, accedes a una reserva de valentía que siempre ha existido en ti.", salmo:"Salmo 34 — Busqué al Señor, y Él me oyó, y me libró de todos mis temores." },
-  { n:37, heb:"אני", name:"ANIEL", letras:"ALEF · NUN · YOD", tema:"Ver todo", subtitulo:"La percepción que lo abarca todo", meditacion:"La mayoría de los conflictos nacen de ver solo una parte de la realidad. Aniel expande tu campo de percepción para que puedas ver las múltiples dimensiones de cualquier situación. Esta visión ampliada te permite tomar decisiones más sabias, comprender a los demás con más profundidad y encontrar soluciones que beneficien a todos. Ver todo no significa juzgar todo; significa comprender más.", salmo:"Salmo 119 — Abre mis ojos, y miraré las maravillas de tu ley." },
-  { n:38, heb:"חעמ", name:"HAAMIAH", letras:"HET · AYIN · MEM", tema:"Reciprocidad", subtitulo:"El flujo de dar y recibir", meditacion:"El universo opera bajo la ley de la reciprocidad: lo que das regresa a ti multiplicado. Haamiah trabaja en abrir tanto el canal del dar como el del recibir, porque muchas personas bloquean uno de los dos. ¿Eres alguien que da pero no sabe recibir? ¿O alguien que toma sin reciprocar? Este Nombre equilibra ambos flujos y restaura la circulación natural de la abundancia en tu vida.", salmo:"Salmo 116 — ¿Qué pagaré al Señor por todos sus beneficios para conmigo?" },
-  { n:39, heb:"רהע", name:"REHAEL", letras:"RESH · HEI · AYIN", tema:"Diamante bruto", subtitulo:"Pulir tu potencial sin forma", meditacion:"Dentro de ti existe un diamante que aún no ha sido tallado. Las presiones, los fracasos y los desafíos que enfrentas no son obstáculos; son el proceso de tallado que revela tu brillo interno. Rehael te ayuda a ver el valor de las dificultades que atraviesas y a confiar en el proceso de tu propia formación. Lo que hoy parece una prueba, mañana será la historia de tu transformación.", salmo:"Salmo 18 — Tú enciendes mi lámpara; el Señor mi Dios ilumina mis tinieblas." },
-  { n:40, heb:"ייז", name:"IEIAZEL", letras:"YOD · YOD · ZAYIN", tema:"Abracadabra", subtitulo:"Las palabras que crean realidad", meditacion:"Abracadabra en arameo significa 'creo lo que hablo'. Ieiazel activa el poder creador de tus palabras y pensamientos, haciéndote consciente de que cada expresión tuya es una semilla que se planta en el campo de la realidad. Practica hablar solo aquello que deseas ver manifestado. Este Nombre amplía el poder de tu intención y acelera el proceso de manifestación de tus deseos más profundos.", salmo:"Salmo 33 — Por la palabra del Señor fueron hechos los cielos, y todo el ejército de ellos por el aliento de su boca." },
-  { n:41, heb:"ההה", name:"HAHAHEL", letras:"HEI · HEI · HEI", tema:"Autoestima", subtitulo:"Reconocer tu valor divino", meditacion:"Tu valor como ser humano no depende de tus logros, apariencia, posición social ni de la aprobación de los demás. Hahahel trabaja en la raíz de la autoestima, que es la comprensión de que eres una expresión única e irremplazable del infinito. Cuando esto se convierte en una verdad sentida y no solo intelectual, la necesidad de validación externa desaparece y una paz profunda ocupa su lugar.", salmo:"Salmo 8 — Le has hecho poco menor que los ángeles, y lo coronaste de gloria y de honra." },
-  { n:42, heb:"מיכ", name:"MIKAEL", letras:"MEM · YOD · KAF", tema:"Revelando lo oculto", subtitulo:"Ver detrás de las apariencias", meditacion:"Las cosas más importantes raramente son las más visibles. Mikael agudiza tu percepción para descubrir lo que se esconde detrás de las apariencias: las motivaciones ocultas, los patrones invisibles y las verdades que otros prefieren mantener en la sombra. Esta clarividencia no es para juzgar sino para navegar con mayor sabiduría. Ver la verdad te libera de la manipulación y te permite tomar decisiones desde la realidad.", salmo:"Salmo 7 — El malvado concibe el mal, está encinta de iniquidad y da a luz el engaño." },
-  { n:43, heb:"וול", name:"VEULIAH", letras:"VAV · VAV · LAM", tema:"La conciencia es todo", subtitulo:"Despertar al testigo interior", meditacion:"Eres antes que todo lo que piensas, sientes o experimentas. Hay en ti un observador que nunca nació y que nunca morirá, que simplemente es. Veuliah activa la conciencia de ese testigo interior, separando tu identidad de los contenidos de tu mente. Cuando sabes que eres el cielo y no las nubes que lo cruzan, los problemas no desaparecen pero pierden su poder de perturbarte profundamente.", salmo:"Salmo 94 — Bienaventurado el hombre a quien tú, Señor, corriges, y en tu ley lo instruyes." },
-  { n:44, heb:"ילה", name:"YLAHIAH", letras:"YOD · LAM · HEI", tema:"Aliviando el karma", subtitulo:"Saldar deudas del alma", meditacion:"El karma no es un castigo sino un sistema de aprendizaje y equilibrio cósmico. Ylahiah trabaja en acelerar el proceso de resolución kármica, transformando deudas antiguas del alma en sabiduría ganada. No tienes que sufrir indefinidamente para saldar lo que debes; puedes hacerlo a través de la conciencia, el arrepentimiento genuino y las acciones correctivas. Este Nombre es tu aliado en ese proceso de liberación.", salmo:"Salmo 32 — Bienaventurado aquel cuya transgresión ha sido perdonada, y cubierto su pecado." },
-  { n:45, heb:"סאל", name:"SEALIAH", letras:"SAMEJ · ALEF · LAM", tema:"Prosperidad", subtitulo:"Abrir el canal de la abundancia", meditacion:"La prosperidad es el estado natural del universo; la escasez es la ilusión. Sealiah trabaja en disolver las creencias inconscientes que bloquean el flujo de abundancia en tu vida: la culpa por tener, el miedo a perder y la sensación de no merecer. La prosperidad que buscas no solo es material; incluye salud, relaciones, creatividad y paz interior. Este Nombre abre todos esos canales simultáneamente.", salmo:"Salmo 65 — Visitas la tierra y la sacias; en gran manera la enriqueces con el río de Dios." },
-  { n:46, heb:"ערי", name:"ARIEL", letras:"AYIN · RESH · YOD", tema:"Certeza absoluta", subtitulo:"Fe que no necesita prueba", meditacion:"La certeza espiritual no es la ausencia de dudas sino la capacidad de actuar con plena confianza a pesar de ellas. Ariel te conecta con esa certeza interior que va más allá de la lógica y la evidencia visible. Cuando operas desde este estado, los obstáculos se disuelven, las sincronicidades aumentan y la vida fluye con una facilidad que antes parecía imposible. La certeza es el imán más poderoso del universo.", salmo:"Salmo 16 — A Jehová he puesto siempre delante de mí; porque está a mi diestra, no seré conmovido." },
-  { n:47, heb:"עשל", name:"ASALIAH", letras:"AYIN · SHIN · LAM", tema:"Transformación global", subtitulo:"Tu cambio transforma el mundo", meditacion:"Cada transformación genuina que ocurre en un ser humano envía ondas de cambio por toda la red de la conciencia colectiva. Asaliah te recuerda que tu trabajo interior no es egoísta; es una contribución al despertar global. Cuando te liberas de una creencia limitante, cuando perdonas una herida antigua o cuando eliges el amor sobre el miedo, estás participando en la transformación del mundo.", salmo:"Salmo 22 — Se acordarán y se volverán al Señor todos los confines de la tierra." },
-  { n:48, heb:"מיה", name:"MIHAEL", letras:"MEM · YOD · HEI", tema:"Unidad", subtitulo:"Recordar que somos uno", meditacion:"La separación es la ilusión fundamental que da origen a todo sufrimiento. Mihael activa en tu conciencia la experiencia vivida de la unidad: que todo está conectado, que el otro eres tú en otra forma, y que el universo es un organismo único del que eres parte inseparable. Esta no es solo una idea filosófica; es una experiencia que transforma radicalmente cómo te relacionas con todo.", salmo:"Salmo 133 — ¡Mirad cuán bueno y cuán delicioso es habitar los hermanos juntos en armonía!" },
-  { n:49, heb:"והו", name:"VEHUEL", letras:"VAV · HEI · VAV", tema:"Felicidad", subtitulo:"El estado que siempre buscaste", meditacion:"La felicidad no es el destino al que llegas después de resolver todos tus problemas; es el estado desde el que eliges vivir ahora mismo. Vehuel trabaja en disolver la postergación de la alegría: la creencia de que serás feliz cuando tengas, logres o te conviertas en algo diferente. La felicidad que buscas afuera ya existe adentro, esperando ser reconocida y elegida en cada momento.", salmo:"Salmo 144 — Bienaventurado el pueblo cuyo Dios es el Señor." },
-  { n:50, heb:"דני", name:"DANIEL", letras:"DALET · NUN · YOD", tema:"Suficiente nunca es suficiente", subtitulo:"Sanar la insaciabilidad", meditacion:"Hay una voz en el ser humano que siempre dice 'más': más dinero, más reconocimiento, más placer, más seguridad. Daniel trabaja en sanar esa insaciabilidad que nace de una herida de abandono o de escasez profundamente arraigada. El verdadero trabajo no es conseguir más sino descubrir que ya tienes suficiente. Desde ese lugar de plenitud, todo lo que genuinamente necesitas llega con facilidad.", salmo:"Salmo 23 — El Señor es mi pastor; nada me faltará." },
-  { n:51, heb:"הוש", name:"HAHASIAH", letras:"HEI · VAV · SHIN", tema:"Superando la culpa", subtitulo:"Liberarse del peso del error", meditacion:"La culpa no reparada se convierte en una condena autoimpuesta que bloquea tu capacidad de avanzar y recibir bien. Hahasiah trabaja en el proceso de genuino arrepentimiento seguido de genuino perdón hacia uno mismo. La diferencia entre culpa sana y culpa tóxica es que la primera te motiva a mejorar y la segunda simplemente te paraliza. Usa este Nombre para transformar el peso del pasado en sabiduría del presente.", salmo:"Salmo 51 — Los sacrificios de Dios son el espíritu quebrantado; al corazón contrito y humillado no despreciarás tú, oh Dios." },
-  { n:52, heb:"עממ", name:"IMAMIAH", letras:"AYIN · MEM · MEM", tema:"Vivir con pasión", subtitulo:"Encender el fuego interior", meditacion:"Una vida sin pasión es una vida a medias. Imamiah activa el fuego sagrado que convierte lo ordinario en extraordinario, el deber en vocación y la rutina en ritual significativo. La pasión no es solo para los artistas o los aventureros; es el derecho de nacimiento de todo ser humano. ¿Qué te encendía antes que la vida cotidiana lo apagara? Este Nombre te ayuda a reencontrar y avivar esa llama.", salmo:"Salmo 119 — El celo de tu casa me consume, y los denuestos de los que te vituperan cayeron sobre mí." },
-  { n:53, heb:"ננא", name:"NANAEL", letras:"NUN · NUN · ALEF", tema:"Sin motivos ulteriores", subtitulo:"La pureza de intención", meditacion:"¿Cuántas veces haces algo aparentemente bueno movido por motivaciones ocultas que no te atreves a admitir? Nanael trabaja en la purificación de tus intenciones, ayudándote a actuar desde un lugar de genuina generosidad sin necesitar nada a cambio. Cuando tus acciones nacen de esta pureza, generan un poder transformador que las acciones interesadas nunca pueden igualar. La transparencia de intención es una de las prácticas espirituales más exigentes y más poderosas.", salmo:"Salmo 26 — Examíname, oh Señor, y pruébame; escudriña mis íntimos pensamientos y mi corazón." },
-  { n:54, heb:"נית", name:"NITHAEL", letras:"NUN · YOD · TAV", tema:"Muerte a muerte", subtitulo:"Transformar el miedo al fin", meditacion:"El miedo a la muerte es el miedo más fundamental y el que da forma a todos los demás. Nithael trabaja en transformar tu relación con la muerte, no como un fin sino como una transición. Cuando pierdes el miedo a morir, también pierdes el miedo a vivir plenamente. Este Nombre también trabaja en las pequeñas muertes cotidianas: el fin de relaciones, de etapas, de identidades que ya no te sirven.", salmo:"Salmo 116 — Preciosa es a los ojos del Señor la muerte de sus santos." },
-  { n:55, heb:"מבה", name:"MEBAHIAH", letras:"MEM · BET · HEI", tema:"Del pensamiento a la acción", subtitulo:"Cerrar la brecha entre idea y realidad", meditacion:"El espacio entre tener una idea y llevarla a cabo es donde viven la mayoría de los sueños sin realizar. Mebahiah actúa como un puente entre el mundo de las posibilidades y el mundo de los hechos, dándote el impulso, la organización y la disciplina necesarios para que lo que conciben tu mente y tu corazón se materialice en la realidad tangible. El pensamiento sin acción es solo fantasía; la acción con pensamiento es creación.", salmo:"Salmo 20 — El Señor te otorgue conforme a tu corazón, y cumpla todo tu consejo." },
-  { n:56, heb:"פוי", name:"POYEL", letras:"PEH · VAV · YOD", tema:"Disipar la rabia", subtitulo:"Transformar el fuego destructivo", meditacion:"La rabia no es intrínsecamente mala; es una señal de que un límite importante ha sido cruzado. El problema es cuando se convierte en una hoguera que te quema a ti primero. Poyel trabaja en transformar la energía de la rabia, liberando su fuerza legítima sin la destrucción que la acompaña. Te enseña a usar ese fuego para establecer límites, defenderte y actuar con eficacia sin perder el control.", salmo:"Salmo 37 — Deja la ira, y desecha el enojo; no te excites en manera alguna a hacer lo malo." },
-  { n:57, heb:"נממ", name:"NEMAMIAH", letras:"NUN · MEM · MEM", tema:"Escucha tu alma", subtitulo:"El silencio que habla", meditacion:"Tu alma te habla constantemente, pero el ruido de la vida cotidiana ahoga su voz. Nemamiah crea un espacio de silencio interior donde esa voz puede ser escuchada claramente. No necesitas retirarte a un monasterio; puedes aprender a acceder a ese silencio en medio del caos. Las respuestas que buscas afuera siempre han estado adentro. Este Nombre aguza tu capacidad de escuchar tu propia sabiduría más profunda.", salmo:"Salmo 46 — Estad quietos y conoced que yo soy Dios." },
-  { n:58, heb:"ייל", name:"YEIALEL", letras:"YOD · YOD · LAM", tema:"Desenchufar", subtitulo:"El poder del descanso consciente", meditacion:"Vivimos en una cultura que glorifica la hiperactividad y el agotamiento como medidas del valor personal. Yeialel trabaja en restablecer tu derecho al descanso genuino, ese que renueva tu ser a nivel celular y espiritual, no el que simplemente pausa el cansancio. Desenchufarte regularmente no es pereza; es mantenimiento del templo que eres. Lo que produces desde el descanso siempre supera lo que produces desde el agotamiento.", salmo:"Salmo 23 — En lugares de delicados pastos me hará descansar; junto a aguas de reposo me pastoreará." },
-  { n:59, heb:"הרו", name:"HARAHEL", letras:"HEI · RESH · VAV", tema:"Fortalecimiento de la conexión", subtitulo:"Profundizar los vínculos sagrados", meditacion:"Las conexiones genuinas entre seres humanos son puentes de luz que fortalecen el tejido del universo. Harahel trabaja en profundizar tus vínculos más importantes, llevándolos de la superficie a una dimensión de comprensión y amor verdaderos. Si hay una relación en tu vida que sientes que podría ser más profunda, contempla este Nombre. También te ayuda a reconocer y honrar las conexiones del alma que a veces pasan desapercibidas.", salmo:"Salmo 25 — Muéstrame, oh Señor, tus caminos; enséñame tus sendas." },
-  { n:60, heb:"מצר", name:"MITZRAEL", letras:"MEM · TZADI · RESH", tema:"Libertad", subtitulo:"Ser libre de verdad", meditacion:"La libertad más profunda no es la ausencia de restricciones externas sino la capacidad de no ser esclavo de tus propios miedos, deseos compulsivos y condicionamientos. Mitzrael trabaja en todos los niveles de la libertad: la libertad de las opiniones ajenas, de los patrones heredados, del pasado que no puedes cambiar y del futuro que no puedes controlar. La libertad verdadera es un estado interior que nadie puede darte ni quitarte.", salmo:"Salmo 119 — Andaré en libertad, porque busqué tus mandamientos." },
-  { n:61, heb:"ומב", name:"UMABEL", letras:"VAV · MEM · BET", tema:"Agua", subtitulo:"Fluir como el agua", meditacion:"El agua es el elemento de la adaptabilidad suprema: toma la forma del recipiente que la contiene sin perder su esencia. Umabel te enseña esta sabiduría fundamental: cómo ser flexible sin ser débil, cómo ceder sin rendirse y cómo encontrar siempre el camino hacia el océano a pesar de los obstáculos. Cuando la vida te pone barreras, el agua no las ataca; las rodea. Esta es la inteligencia que este Nombre activa en ti.", salmo:"Salmo 42 — Como el ciervo brama por las corrientes de las aguas, así clama por ti, oh Dios, el alma mía." },
-  { n:62, heb:"יהה", name:"IAH-HEL", letras:"YOD · HEI · HEI", tema:"Enseñanza por ejemplo", subtitulo:"Ser lo que predicas", meditacion:"Las palabras que más transforman no son las que se dicen sino las que se viven. Iah-Hel activa en ti el don de la coherencia: esa alineación entre lo que crees, dices y haces que hace que tu mera presencia sea una enseñanza. Las personas a tu alrededor aprenden más de cómo vives que de cualquier consejo que puedas darles. Ser el cambio que deseas ver en el mundo no es un cliché; es el método espiritual más poderoso.", salmo:"Salmo 34 — Venid, hijos, oídme; el temor del Señor os enseñaré." },
-  { n:63, heb:"ענו", name:"ANAUEL", letras:"AYIN · NUN · VAV", tema:"Evaluación", subtitulo:"Ver con claridad tu camino", meditacion:"Periódicamente necesitas detenerte y evaluar honestamente dónde estás, a dónde vas y si el camino que sigues aún te lleva hacia lo que realmente quieres. Anauel te otorga la claridad y la honestidad necesarias para esta evaluación sin caer en el autoengaño ni en la autocrítica destructiva. Una evaluación genuina no es un juicio; es una brújula. Te dice dónde estás para que puedas decidir conscientemente hacia dónde ir.", salmo:"Salmo 139 — Examíname, oh Dios, y conoce mi corazón; pruébame y conoce mis pensamientos." },
-  { n:64, heb:"מחי", name:"MEHIEL", letras:"MEM · HET · YOD", tema:"Revelando lo mejor de ti", subtitulo:"Tu versión más elevada", meditacion:"Dentro de ti existe una versión de ti mismo que ha resuelto los problemas que hoy te agobian, que ama sin condiciones y que vive con plena coherencia entre sus valores y sus acciones. Mehiel actúa como un espejo que refleja esa versión elevada, inspirándote a dar los pasos que te acercan a ella. No se trata de ser perfecto; se trata de ser más tú mismo en el sentido más profundo.", salmo:"Salmo 139 — Te alabaré, porque formidables y maravillosas son tus obras; estoy maravillado, y mi alma lo sabe muy bien." },
-  { n:65, heb:"דמב", name:"DAMABIAH", letras:"DALET · MEM · BET", tema:"Justicia divina", subtitulo:"Confiar en el orden cósmico", meditacion:"Cuando ves injusticias sin resolver o cuando sientes que no has recibido lo que mereces, la tentación es tomar la justicia en tus propias manos o caer en la amargura. Damabiah te recuerda que existe un sistema de justicia cósmica que opera más allá de lo que puedes ver. No todo se resuelve en el tiempo que tú esperas ni de la manera que imaginas, pero todo se resuelve. Confía en ese orden superior.", salmo:"Salmo 9 — El Señor juzgará al mundo con justicia, y a los pueblos con rectitud." },
-  { n:66, heb:"מנק", name:"MANAKEL", letras:"MEM · NUN · KUF", tema:"Asumiendo responsabilidad", subtitulo:"El poder de ser causa", meditacion:"Mientras te veas como víctima de las circunstancias, estarás a merced de ellas. Manakel trabaja en el shift fundamental de víctima a creador: la comprensión de que tú eres en gran medida el autor de tu realidad. Esto no es culparte por lo que salió mal; es empoderarte para cambiarlo. Cuando asumes la responsabilidad de tu vida con amor, sin juicio, descubres que también tienes el poder de transformarla.", salmo:"Salmo 119 — Yo conozco, oh Señor, que tus juicios son justos, y que conforme a tu fidelidad me afligiste." },
-  { n:67, heb:"איע", name:"EYAEL", letras:"ALEF · YOD · AYIN", tema:"Pies en la tierra", subtitulo:"Enraizarse en lo real", meditacion:"La espiritualidad sin arraigo en lo cotidiano se convierte en escapismo. Eyael trabaja en la integración de lo espiritual con lo práctico, ayudándote a vivir tus valores más elevados en el mundo real con toda su complejidad y resistencia. Los pies en la tierra no contradicen la cabeza en el cielo; son lo que te permite estar en ambos lugares simultáneamente. Esta es la maestría de lo sagrado en lo ordinario.", salmo:"Salmo 37 — El Señor afianza los pasos del hombre cuando le agrada su camino." },
-  { n:68, heb:"חבו", name:"HABUHIAH", letras:"HET · BET · VAV", tema:"Ayuda desde más allá", subtitulo:"Recibir asistencia invisible", meditacion:"No estás solo en tu camino. Existe una red de asistencia espiritual disponible para ti en todo momento: guías, ángeles, ancestros elevados y la propia inteligencia del universo. Habuhiah abre tu capacidad de recibir esta ayuda que siempre ha estado disponible pero que muchas veces no puedes percibir por el ruido de la mente y la desconfianza. Pide. Confía. Recibe. Esa es la práctica de este Nombre.", salmo:"Salmo 121 — Mi socorro viene del Señor, que hizo los cielos y la tierra." },
-  { n:69, heb:"ראה", name:"ROCHEL", letras:"RESH · ALEF · HEI", tema:"Perdidos y encontrados", subtitulo:"Recuperar lo que se fue", meditacion:"Hay cosas que hemos perdido que merecen ser recuperadas: relaciones, oportunidades, partes de nosotros mismos que abandonamos en el camino. Rochel trabaja en la recuperación de lo perdido, ya sea en el plano material o espiritual. También te ayuda a distinguir lo que vale la pena recuperar de lo que ya cumplió su ciclo. No todo lo perdido debe ser recuperado; la sabiduría está en saber la diferencia.", salmo:"Salmo 23 — Él restituye mi alma; me guía por sendas de justicia por amor de su nombre." },
-  { n:70, heb:"יבמ", name:"JABAMIAH", letras:"YOD · BET · MEM", tema:"Transformando problemas en desafíos", subtitulo:"Ver el regalo en la dificultad", meditacion:"La diferencia entre un problema y un desafío no está en la situación sino en la perspectiva desde la que la miras. Un problema te paraliza; un desafío te moviliza. Jabamiah trabaja en esa transformación de perspectiva que convierte los obstáculos en escalones. Cada dificultad contiene exactamente el aprendizaje que necesitas para tu siguiente nivel. La vida no te pone pruebas aleatorias; te da oportunidades perfectamente calibradas.", salmo:"Salmo 119 — Antes de ser humillado anduve descarriado, pero ahora guardo tu palabra." },
-  { n:71, heb:"היי", name:"HAIAYEL", letras:"HEI · YOD · YOD", tema:"Universos paralelos y profecía", subtitulo:"Ver las líneas del destino", meditacion:"En cada momento existen múltiples futuros posibles que divergen según las decisiones que tomas. Haiayel activa tu capacidad de percibir estas líneas de posibilidad y de elegir conscientemente hacia dónde querés dirigirte. La profecía no es un destino fijo sino la visión del camino más probable según tu energía actual. Al contemplar este Nombre, expandés tu conciencia temporal y te convertís en un navegante más sabio de tu propio destino.", salmo:"Salmo 31 — En tu mano están mis tiempos; líbrame de la mano de mis enemigos y de mis perseguidores." },
-  { n:72, heb:"מומ", name:"MUMIAH", letras:"MEM · VAV · MEM", tema:"Purificación espiritual", subtitulo:"El gran cierre y reinicio", meditacion:"Mumiah es el último de los 72 Nombres y contiene la energía del cierre, la purificación final y la preparación para el próximo ciclo. Trabajar con este Nombre es como hacer una limpieza profunda del alma: todo lo que ya no sirve, todo lo que has acumulado sin darte cuenta, todo lo que bloquea tu próxima expansión es disuelto. Al completar los 72 Nombres y regresar al inicio, no volvés al mismo lugar; volvés transformado.", salmo:"Salmo 90 — Enséñanos de tal modo a contar nuestros días, que traigamos al corazón sabiduría." },
+const APP_VERSION = '2.1';
+const CHANGELOG = [
+  'Ángeles del día para toda la semana, incluido Shabat en sus tres momentos (noche, mañana y tarde)',
+  'Letras del mes según el cuadro oficial del Centro de Kabbalah',
+  'Ana Bekoach: qué trabaja cada línea',
+  'Tikún HaNéfesh completo, con la nariz',
+  'Nuevo menú de inicio con todas las opciones',
+  'Ana Bekoach: línea del día, signo del mes, momento del día y Tikún HaNéfesh',
+  'Shemá Israel con su explicación de uso',
+  'Los 14 preceptos del Zohar',
+  'Nombre del día: ahora podés elegir cualquiera de los 72',
+  'Nombre del alma: ahora usa hora y ciudad de nacimiento. Se corrigió un error que sumaba un día: si ya lo calculaste, volvé a hacerlo',
+  'Corregidas las letras de 15 nombres'
 ];
 
-function getRandom(exclude) {
-  let n;
-  do { n = Math.floor(Math.random() * 72) + 1; } while (n === exclude);
-  return NOMBRES.find(x => x.n === n);
+const NOMBRES = [{"n": 1, "heb": "והו", "name": "VEHUIAH", "tema": "Regresando en el tiempo", "subtitulo": "Cómo corregir el pasado", "meditacion": "Despierta en tu corazón el sentimiento de las malas acciones del pasado. Acepta la sincera verdad espiritual de que tus problemas actuales son el resultado de acciones pasadas. Al concentrarte en este Nombre, erradicas las semillas negativas que ya se han plantado. Al hacerlo, transformas tu pasado, remodelas tu presente y te aseguras un futuro lleno de alegría y plenitud.", "salmo": "Salmo 3 — Acabo de levantar mi voz al Señor y Él me responde desde su santo monte."}, {"n": 2, "heb": "ילי", "name": "JELIEL", "tema": "Rescate de la chispa", "subtitulo": "Reavivar la llama interior", "meditacion": "Hay una chispa divina en ti que ninguna oscuridad puede apagar. Este Nombre activa esa llama cuando sientes que se ha extinguido. Cuando la pasión, el propósito o la fe parecen haberte abandonado, Jeliel restaura la conexión con tu fuente original. Concéntrate en las letras y siente cómo algo en tu interior vuelve a encenderse con fuerza renovada.", "salmo": "Salmo 22 — Tú eres quien me sacó del vientre, el que me hizo confiar desde los pechos de mi madre."}, {"n": 3, "heb": "סיט", "name": "SITAEL", "tema": "Creando milagros", "subtitulo": "Construir lo imposible", "meditacion": "Los milagros no son excepciones a las leyes del universo, son la expresión más alta de ellas. Sitael te otorga la capacidad de manifestar lo que parece inalcanzable. Al contemplar este Nombre, activas la frecuencia de la creación pura. Todo proyecto, sueño o necesidad que llevas en tu corazón puede encontrar su camino a la realidad cuando operas desde esta vibración.", "salmo": "Salmo 91 — Te libraré y te glorificaré, te colmaré con larga vida y te mostraré mi salvación."}, {"n": 4, "heb": "עלם", "name": "ELEMIAH", "tema": "Eliminando pensamientos negativos", "subtitulo": "Limpiar el campo mental", "meditacion": "La mente es un campo de siembra. Cada pensamiento negativo que permites crecer se convierte en una raíz que drena tu energía vital. Elemiah actúa como un purificador del espacio mental, disolviendo patrones de pensamiento autodestructivos que has acumulado. Usa este Nombre cuando sientas que tu mente trabaja en tu contra, transformando el caos interior en claridad.", "salmo": "Salmo 6 — Apártate de mí, todos los que hacéis iniquidad, porque el Señor ha oído la voz de mi llanto."}, {"n": 5, "heb": "מהש", "name": "MAHASIAH", "tema": "Cura", "subtitulo": "Sanar desde la raíz", "meditacion": "La verdadera curación no comienza en el cuerpo sino en el origen espiritual de la enfermedad. Mahasiah trabaja en las capas más profundas de tu ser, donde las heridas emocionales y kármicas se manifiestan como dolencia física. Al contemplar estas letras, invitas una corriente de luz sanadora que fluye hacia donde más se necesita. La salud es tu estado natural; este Nombre te ayuda a regresar a él.", "salmo": "Salmo 34 — Muchas son las aflicciones del justo, pero de todas ellas lo librará el Señor."}, {"n": 6, "heb": "ללה", "name": "LELAHEL", "tema": "Sueños", "subtitulo": "El portal de la noche", "meditacion": "Mientras duermes, tu alma viaja y recibe mensajes que tu mente consciente no puede procesar. Lelahel abre el canal de comunicación entre el mundo de los sueños y tu vida cotidiana. Antes de dormir, contempla estas letras con la intención de recibir guía. Al despertar, los mensajes que traes contigo cobran sentido y se convierten en brújula para tus decisiones.", "salmo": "Salmo 57 — Mi corazón está firme, oh Dios, mi corazón está firme; cantaré y entonaré salmos."}, {"n": 7, "heb": "אכא", "name": "ACHAIAH", "tema": "Restaurando el ADN del alma", "subtitulo": "Reprogramar el código original", "meditacion": "Tu alma llegó a este mundo con un propósito específico codificado en su esencia más profunda. Las experiencias traumáticas, las decisiones erróneas y el peso del karma pueden distorsionar ese código original. Achaiah actúa como un restaurador del diseño original de tu alma, borrando las modificaciones no deseadas. Concéntrate en las letras y permite que tu ser más auténtico emerja.", "salmo": "Salmo 103 — Él perdona todas tus iniquidades, Él sana todas tus enfermedades."}, {"n": 8, "heb": "כהת", "name": "CAHETEL", "tema": "Sin estrés", "subtitulo": "La paz que trasciende la mente", "meditacion": "El estrés es la brecha entre cómo son las cosas y cómo crees que deberían ser. Cahetel cierra esa brecha no cambiando la realidad exterior, sino elevando tu perspectiva interior. Al trabajar con este Nombre, accedes a un estado de ecuanimidad donde los problemas no desaparecen pero pierden su poder sobre ti. La calma que encuentras aquí es duradera porque viene de adentro.", "salmo": "Salmo 95 — Venid, adoremos y postrémonos; arrodillémonos delante del Señor nuestro Hacedor."}, {"n": 9, "heb": "הזי", "name": "HAZIEL", "tema": "Influencias angelicas", "subtitulo": "Abrir el canal con lo superior", "meditacion": "Estás rodeado de presencias benevolentes que desean guiarte y protegerte. Haziel abre tu percepción a estas influencias angelicales que operan constantemente a tu alrededor. No necesitas ver para creer; necesitas creer para ver. Al contemplar estas letras, afinas tu sensibilidad espiritual y comienzas a percibir la guía sutil que siempre estuvo disponible para ti.", "salmo": "Salmo 25 — Los secretos del Señor son para los que le temen, y Él les hará conocer su pacto."}, {"n": 10, "heb": "אלד", "name": "ALADIAH", "tema": "Mirada que puede matar", "subtitulo": "Protección contra la envidia", "meditacion": "La envidia y el mal de ojo son formas reales de energía negativa que pueden afectar tu vida sin que lo notes. Aladiah crea un escudo de luz alrededor tuyo que neutraliza estas proyecciones antes de que lleguen a su destino. Cuando sientas que algo externo está bloqueando tu flujo natural, usa este Nombre. También te ayuda a purificar cualquier envidia que pueda existir en tu propio corazón.", "salmo": "Salmo 33 — El ojo del Señor está sobre los que le temen, sobre los que esperan en su misericordia."}, {"n": 11, "heb": "לאו", "name": "LAUVIAH", "tema": "Eliminando las fuerzas del mal", "subtitulo": "Disolver la oscuridad activa", "meditacion": "Existen fuerzas que se alimentan del caos, la duda y el miedo humano. Lauviah te otorga la capacidad de identificar y neutralizar estas influencias negativas en tu vida. No se trata de luchar contra la oscuridad sino de encender la luz con tanta intensidad que no quede espacio para ella. Usa este Nombre cuando sientas presencias o situaciones que drenan tu energía vital.", "salmo": "Salmo 18 — El Señor es mi roca, mi fortaleza y mi libertador; mi Dios, mi fuerza en quien confío."}, {"n": 12, "heb": "ההע", "name": "HAHAIAH", "tema": "Amor incondicional", "subtitulo": "El amor que no pide nada", "meditacion": "El amor incondicional es la fuerza más transformadora del universo. Hahaiah te conecta con esta frecuencia que trasciende las condiciones, expectativas y miedos que normalmente acompañan al amor humano. Al trabajar con este Nombre, sanas las heridas que te impiden amar y ser amado plenamente. Permite que este amor fluya primero hacia ti mismo, y desde ahí hacia todos los demás.", "salmo": "Salmo 89 — Para siempre le guardaré mi misericordia, y mi pacto será firme con él."}, {"n": 13, "heb": "יזל", "name": "IEZALEL", "tema": "Paraíso en la tierra", "subtitulo": "Manifestar el cielo aquí", "meditacion": "El paraíso no es un lugar al que vas después de morir; es un estado que puedes crear aquí y ahora. Iezalel te enseña a reconocer y amplificar los momentos de gracia, belleza y plenitud en tu vida cotidiana. Cada instante contiene la posibilidad del cielo. Al contemplar estas letras, entrenas tu percepción para ver lo divino en lo ordinario y transformar tu realidad desde adentro.", "salmo": "Salmo 65 — Tú coronas el año con tus bienes, y tus nubes destilan abundancia."}, {"n": 14, "heb": "מבה", "name": "MEBAEL", "tema": "Adiós a la guerra", "subtitulo": "Terminar los conflictos internos", "meditacion": "La guerra más devastadora es la que libras dentro de ti mismo. Mebael trabaja en la reconciliación de las partes opuestas de tu ser: la sombra y la luz, el miedo y el amor, el pasado y el futuro. Cuando dejas de pelear contigo mismo, los conflictos externos también comienzan a resolverse. Este Nombre te guía hacia la paz interior que es la base de toda paz exterior.", "salmo": "Salmo 120 — En mi angustia clamé al Señor, y Él me respondió."}, {"n": 15, "heb": "הרי", "name": "HARIEL", "tema": "Visión de largo alcance", "subtitulo": "Ver más allá del presente", "meditacion": "La mayoría de las decisiones erróneas vienen de ver solo lo inmediato sin considerar las consecuencias a largo plazo. Hariel expande tu horizonte temporal y espiritual, permitiéndote ver el panorama completo de una situación. Antes de tomar decisiones importantes, contempla este Nombre. Te ayuda a distinguir lo urgente de lo importante y a actuar desde una perspectiva más elevada.", "salmo": "Salmo 27 — Una cosa he demandado al Señor, ésta buscaré: que esté yo en la casa del Señor todos los días de mi vida."}, {"n": 16, "heb": "הקם", "name": "HEKAMIAH", "tema": "Salir de la depresión", "subtitulo": "Ascender desde el fondo", "meditacion": "La depresión es una desconexión de la fuente de vida que existe en tu interior. Hekamiah actúa como un cable conductor que restablece esa conexión cuando parece haberse cortado. No luches contra la oscuridad; simplemente enciende la luz de este Nombre. Al contemplar estas letras con intención, activas corrientes de energía vital que comienzan a disolver la pesadez desde adentro hacia afuera.", "salmo": "Salmo 88 — Señor, Dios de mi salvación, día y noche clamo delante de ti."}, {"n": 17, "heb": "לאו", "name": "LAUVIAH", "tema": "Liberación interior", "subtitulo": "Romper las cadenas invisibles", "meditacion": "Las prisiones más difíciles de escapar son las que construimos con nuestros propios pensamientos y creencias. Lauviah trabaja en la liberación de los patrones mentales que te mantienen atrapado en ciclos repetitivos. Identifica una creencia limitante que cargas hoy y entrégasela a este Nombre. La libertad verdadera comienza cuando te das cuenta de que siempre tuviste la llave.", "salmo": "Salmo 116 — Preciosa es a los ojos del Señor la muerte de sus santos."}, {"n": 18, "heb": "כלי", "name": "CALIEL", "tema": "Fertilidad", "subtitulo": "Crear nueva vida", "meditacion": "La fertilidad no se limita al plano físico; incluye la capacidad de dar vida a ideas, proyectos, relaciones y sueños. Caliel activa la energía creadora en todos los niveles de tu ser. Si buscas concebir un hijo, comenzar un proyecto o simplemente renovar tu entusiasmo por la vida, este Nombre es tu aliado. La creación es tu naturaleza más profunda; permítete expresarla plenamente.", "salmo": "Salmo 113 — Él hace habitar en familia a la estéril, que se goza en ser madre de hijos."}, {"n": 19, "heb": "לוו", "name": "LEUVIAH", "tema": "Hablar con Dios", "subtitulo": "La oración que es escuchada", "meditacion": "La oración no es un monólogo sino un diálogo. Leuviah abre el canal bidireccional entre tu alma y la fuente divina, permitiéndote no solo enviar sino también recibir. Cuando contemplas este Nombre, tu oración trasciende las palabras y se convierte en una sintonía de frecuencias. Aprende a escuchar en el silencio que sigue a tus palabras; ahí es donde las respuestas llegan.", "salmo": "Salmo 65 — A ti será hecha la oración, oh Dios que oyes la oración."}, {"n": 20, "heb": "פהל", "name": "PAHALIAH", "tema": "Superando adicciones", "subtitulo": "Liberar el apego compulsivo", "meditacion": "Toda adicción es un intento desesperado de llenar un vacío espiritual con algo material. Pahaliah trabaja en identificar y sanar ese vacío en su origen, quitando el poder que la sustancia o comportamiento tiene sobre ti. La libertad no viene de la fuerza de voluntad sino de encontrar algo más poderoso que llene lo que la adicción prometía llenar. Este Nombre es ese algo más poderoso.", "salmo": "Salmo 18 — Me libró de mi poderoso enemigo, y de los que me aborrecían, pues eran más fuertes que yo."}, {"n": 21, "heb": "נלך", "name": "NELCHAEL", "tema": "Erradicando la plaga", "subtitulo": "Eliminar el mal en su raíz", "meditacion": "Hay situaciones en la vida que se repiten una y otra vez porque no hemos llegado a su raíz. Nelchael te da la capacidad de ver y eliminar la causa profunda de los problemas recurrentes, ya sean enfermedades, conflictos o patrones de fracaso. No te conformes con tratar los síntomas; usa este Nombre para llegar al origen y erradicarlo de una vez por todas.", "salmo": "Salmo 31 — Sácame de la red que han escondido para mí, pues tú eres mi refugio."}, {"n": 22, "heb": "ייי", "name": "YEIAIEL", "tema": "Salir de la atracción fatal", "subtitulo": "Liberarse del amor destructivo", "meditacion": "Algunas relaciones nos atraen con una fuerza magnética que desafía la razón, aunque sepamos que nos hacen daño. Yeiaiel trabaja en disolver ese vínculo kármico que te mantiene atado a personas o situaciones que drenan tu vida. No se trata de dejar de amar, sino de recuperar tu libertad. Al contemplar estas letras, activas tu discernimiento para distinguir el amor verdadero de la dependencia disfrazada.", "salmo": "Salmo 121 — El Señor te guardará de todo mal; Él guardará tu alma."}, {"n": 23, "heb": "מלה", "name": "MELAHEL", "tema": "Compartiendo la llama", "subtitulo": "Encender a otros con tu luz", "meditacion": "Tu crecimiento espiritual no es solo para ti; la luz que acumulas está destinada a ser compartida. Melahel activa en ti el don de inspirar y elevar a quienes te rodean sin que pierdas tu propia energía en el proceso. Hay personas en tu entorno que esperan la chispa que solo tú puedes darles. Contempla este Nombre y permite que tu presencia se convierta en un regalo para el mundo.", "salmo": "Salmo 89 — Bienaventurado el pueblo que sabe aclamarte; andará, oh Señor, a la luz de tu rostro."}, {"n": 24, "heb": "חהו", "name": "HAHEUIAH", "tema": "Terminar los celos", "subtitulo": "Disolver la comparación corrosiva", "meditacion": "Los celos nacen de la creencia de que la abundancia de otro disminuye la tuya. Haheuiah te enseña que el universo tiene suficiente para todos y que el éxito ajeno no bloquea el tuyo. Al contemplar estas letras, sanas la herida de la comparación y abres tu corazón a la genuina alegría por el bien de los demás. Lo que celebras en otros, lo atraes hacia ti.", "salmo": "Salmo 69 — Que te alaben los cielos y la tierra, los mares y todo lo que se mueve en ellos."}, {"n": 25, "heb": "נתה", "name": "NITH-HAIAH", "tema": "Hablando la verdad", "subtitulo": "El poder de la palabra honesta", "meditacion": "Cada vez que dices una mentira, pequeña o grande, creas una fractura en tu integridad que drena tu energía vital. Nith-Haiah te da el valor y la claridad para hablar tu verdad incluso cuando es difícil. La honestidad no es solo una virtud moral; es una práctica espiritual que mantiene tu campo energético limpio y alineado. Contempla este Nombre cuando necesites decir algo importante con claridad y amor.", "salmo": "Salmo 15 — El que habla verdad en su corazón, el que no calumnia con su lengua."}, {"n": 26, "heb": "האא", "name": "HAAIAH", "tema": "Orden del caos", "subtitulo": "Encontrar el patrón oculto", "meditacion": "Lo que parece caos siempre contiene un orden superior esperando ser descubierto. Haaiah te otorga la capacidad de ver la estructura divina detrás de los eventos aparentemente aleatorios o caóticos de tu vida. Cuando todo parece derrumbarse sin sentido, este Nombre activa tu percepción para encontrar el hilo conductor. El caos es siempre el preludio de un orden más elevado.", "salmo": "Salmo 111 — Ha dado alimento a los que le temen; para siempre se acordará de su pacto."}, {"n": 27, "heb": "ירת", "name": "YERATHEL", "tema": "La mejor asociación", "subtitulo": "Atraer al socio correcto", "meditacion": "Las asociaciones correctas pueden multiplicar exponencialmente tu capacidad de impacto y realización. Yerathel actúa como un imán que atrae hacia ti a las personas cuyas energías, habilidades y valores se complementan con los tuyos. Antes de iniciar una sociedad, negocio o colaboración importante, contempla este Nombre. También ayuda a sanar y fortalecer las asociaciones existentes que vale la pena preservar.", "salmo": "Salmo 3 — La salvación pertenece al Señor; sobre tu pueblo sea tu bendición."}, {"n": 28, "heb": "שאה", "name": "SEHEIAH", "tema": "Alma gemela", "subtitulo": "Encontrar tu complemento perfecto", "meditacion": "El alma gemela no es una fantasía romántica; es una realidad espiritual. Existe alguien en este mundo cuya frecuencia resuena de manera única con la tuya. Seheiah trabaja en dos direcciones: prepara tu campo energético para recibir esa conexión y guía tus pasos para que los caminos se crucen. Pero primero, te ayuda a ser la persona que tu alma gemela está buscando.", "salmo": "Salmo 128 — Tu mujer será como vid que lleva fruto a los lados de tu casa."}, {"n": 29, "heb": "ריי", "name": "REIYEL", "tema": "Eliminando el odio", "subtitulo": "Disolver el veneno de la rabia", "meditacion": "El odio es un veneno que bebes tú esperando que enferme el otro. Reiyel trabaja en las capas profundas donde el resentimiento se ha instalado como una toxina que contamina tu vida desde adentro. No se trata de aprobar lo que otros hicieron; se trata de liberarte del peso que cargas innecesariamente. Al contemplar este Nombre, inicias un proceso de liberación que te devuelve tu energía vital.", "salmo": "Salmo 97 — Los que amáis al Señor, aborreced el mal; Él guarda las almas de sus santos."}, {"n": 30, "heb": "אום", "name": "OMAEL", "tema": "Reconstrucción de puentes", "subtitulo": "Sanar relaciones rotas", "meditacion": "Algunas de las relaciones más importantes de tu vida han sido dañadas por malentendidos, palabras hirientes o traiciones. Omael actúa como un puente de luz entre corazones separados, creando las condiciones para la reconciliación genuina. No trabaja en la superficie sino en el nivel del alma, donde la herida realmente ocurrió. Si hay alguien con quien deseas restaurar el vínculo, este Nombre es tu aliado.", "salmo": "Salmo 133 — ¡Mirad cuán bueno y cuán delicioso es habitar los hermanos juntos en armonía!"}, {"n": 31, "heb": "לכב", "name": "LECABEL", "tema": "Completa lo que empezó", "subtitulo": "La energía del cierre", "meditacion": "La incapacidad de completar lo que se empieza dispersa tu energía y crea una carga invisible que pesa más con cada proyecto abandonado. Lecabel te da la persistencia, el enfoque y la energía necesarios para cruzar la línea de llegada. Piensa en algo importante que has dejado incompleto. Contempla estas letras y siente cómo una corriente de energía renovada fluye hacia esa tarea.", "salmo": "Salmo 119 — Eterno es el fundamento de tu palabra, y justo el juicio de tu justicia."}, {"n": 32, "heb": "ושר", "name": "VASARIAH", "tema": "Recuerda el aprendizaje", "subtitulo": "Activar la memoria del alma", "meditacion": "Tu alma ha acumulado sabiduría a lo largo de muchas vidas que espera ser recordada y utilizada. Vasariah activa esa memoria profunda, haciendo accesible el conocimiento que ya posees pero que tu mente consciente no puede alcanzar sola. Cuando estudias, aprendes o necesitas acceder a una comprensión más profunda de algo, contempla este Nombre. La sabiduría que buscas ya vive en ti.", "salmo": "Salmo 119 — De tus mandamientos he adquirido inteligencia; por tanto, he aborrecido todo camino de mentira."}, {"n": 33, "heb": "יחו", "name": "YEHUIAH", "tema": "Reconozca su negatividad", "subtitulo": "Ver tu propia sombra", "meditacion": "El primer paso hacia la transformación es la honesta observación de tus propios patrones negativos. Yehuiah te da el valor y la claridad para mirar sin juicio las partes de ti mismo que normalmente prefieres ignorar. Esta no es una práctica de autoflagelación sino de autoconocimiento compasivo. Lo que no puedes ver, no puedes cambiar. Lo que puedes ver con amor, ya está a mitad de camino de ser transformado.", "salmo": "Salmo 94 — El Señor conoce los pensamientos de los hombres, que son vanidad."}, {"n": 34, "heb": "להח", "name": "LEHAHIAH", "tema": "Sin ego", "subtitulo": "Disolver la ilusión del yo separado", "meditacion": "El ego es la ilusión de estar separado del todo. Esta ilusión es la fuente de la mayoría del sufrimiento humano. Lehahiah trabaja en disolver gradualmente esa membrana que te hace sentir aislado del universo y de los demás. No se trata de aniquilar tu individualidad sino de descubrir que eres simultáneamente una ola única y el océano completo. La humildad genuina que emerge de esta comprensión es liberadora.", "salmo": "Salmo 131 — Señor, no se ha envanecido mi corazón, ni mis ojos se enaltecieron."}, {"n": 35, "heb": "כוק", "name": "CHAVAKIAH", "tema": "Energía sexual", "subtitulo": "Canalizar la fuerza creadora", "meditacion": "La energía sexual es la expresión más densa de la fuerza creadora del universo. Chavakiah te enseña a trabajar conscientemente con esta energía, canalizándola hacia la creación, la sanación y la elevación espiritual sin suprimirla ni desperdiciarla. Cuando esta fuerza es honrada y dirigida con conciencia, se convierte en el combustible más poderoso para tu transformación personal y tu capacidad de manifestar.", "salmo": "Salmo 51 — Crea en mí, oh Dios, un corazón limpio, y renueva un espíritu recto dentro de mí."}, {"n": 36, "heb": "מנד", "name": "MENADEL", "tema": "Sin miedo", "subtitulo": "Actuar a pesar del miedo", "meditacion": "El miedo es una ilusión proyectada desde el futuro hacia el presente. Menadel no elimina el miedo de golpe sino que te da la capacidad de actuar a pesar de él. El valor no es la ausencia de miedo; es decidir que algo importa más que el miedo que sientes. Al contemplar este Nombre antes de enfrentar algo que te atemoriza, accedes a una reserva de valentía que siempre ha existido en ti.", "salmo": "Salmo 34 — Busqué al Señor, y Él me oyó, y me libró de todos mis temores."}, {"n": 37, "heb": "אני", "name": "ANIEL", "tema": "Ver todo", "subtitulo": "La percepción que lo abarca todo", "meditacion": "La mayoría de los conflictos nacen de ver solo una parte de la realidad. Aniel expande tu campo de percepción para que puedas ver las múltiples dimensiones de cualquier situación. Esta visión ampliada te permite tomar decisiones más sabias, comprender a los demás con más profundidad y encontrar soluciones que beneficien a todos. Ver todo no significa juzgar todo; significa comprender más.", "salmo": "Salmo 119 — Abre mis ojos, y miraré las maravillas de tu ley."}, {"n": 38, "heb": "חעם", "name": "HAAMIAH", "tema": "Reciprocidad", "subtitulo": "El flujo de dar y recibir", "meditacion": "El universo opera bajo la ley de la reciprocidad: lo que das regresa a ti multiplicado. Haamiah trabaja en abrir tanto el canal del dar como el del recibir, porque muchas personas bloquean uno de los dos. ¿Eres alguien que da pero no sabe recibir? ¿O alguien que toma sin reciprocar? Este Nombre equilibra ambos flujos y restaura la circulación natural de la abundancia en tu vida.", "salmo": "Salmo 116 — ¿Qué pagaré al Señor por todos sus beneficios para conmigo?"}, {"n": 39, "heb": "רהע", "name": "REHAEL", "tema": "Diamante bruto", "subtitulo": "Pulir tu potencial sin forma", "meditacion": "Dentro de ti existe un diamante que aún no ha sido tallado. Las presiones, los fracasos y los desafíos que enfrentas no son obstáculos; son el proceso de tallado que revela tu brillo interno. Rehael te ayuda a ver el valor de las dificultades que atraviesas y a confiar en el proceso de tu propia formación. Lo que hoy parece una prueba, mañana será la historia de tu transformación.", "salmo": "Salmo 18 — Tú enciendes mi lámpara; el Señor mi Dios ilumina mis tinieblas."}, {"n": 40, "heb": "ייז", "name": "IEIAZEL", "tema": "Abracadabra", "subtitulo": "Las palabras que crean realidad", "meditacion": "Abracadabra en arameo significa 'creo lo que hablo'. Ieiazel activa el poder creador de tus palabras y pensamientos, haciéndote consciente de que cada expresión tuya es una semilla que se planta en el campo de la realidad. Practica hablar solo aquello que deseas ver manifestado. Este Nombre amplía el poder de tu intención y acelera el proceso de manifestación de tus deseos más profundos.", "salmo": "Salmo 33 — Por la palabra del Señor fueron hechos los cielos, y todo el ejército de ellos por el aliento de su boca."}, {"n": 41, "heb": "ההה", "name": "HAHAHEL", "tema": "Autoestima", "subtitulo": "Reconocer tu valor divino", "meditacion": "Tu valor como ser humano no depende de tus logros, apariencia, posición social ni de la aprobación de los demás. Hahahel trabaja en la raíz de la autoestima, que es la comprensión de que eres una expresión única e irremplazable del infinito. Cuando esto se convierte en una verdad sentida y no solo intelectual, la necesidad de validación externa desaparece y una paz profunda ocupa su lugar.", "salmo": "Salmo 8 — Le has hecho poco menor que los ángeles, y lo coronaste de gloria y de honra."}, {"n": 42, "heb": "מיך", "name": "MIKAEL", "tema": "Revelando lo oculto", "subtitulo": "Ver detrás de las apariencias", "meditacion": "Las cosas más importantes raramente son las más visibles. Mikael agudiza tu percepción para descubrir lo que se esconde detrás de las apariencias: las motivaciones ocultas, los patrones invisibles y las verdades que otros prefieren mantener en la sombra. Esta clarividencia no es para juzgar sino para navegar con mayor sabiduría. Ver la verdad te libera de la manipulación y te permite tomar decisiones desde la realidad.", "salmo": "Salmo 7 — El malvado concibe el mal, está encinta de iniquidad y da a luz el engaño."}, {"n": 43, "heb": "וול", "name": "VEULIAH", "tema": "La conciencia es todo", "subtitulo": "Despertar al testigo interior", "meditacion": "Eres antes que todo lo que piensas, sientes o experimentas. Hay en ti un observador que nunca nació y que nunca morirá, que simplemente es. Veuliah activa la conciencia de ese testigo interior, separando tu identidad de los contenidos de tu mente. Cuando sabes que eres el cielo y no las nubes que lo cruzan, los problemas no desaparecen pero pierden su poder de perturbarte profundamente.", "salmo": "Salmo 94 — Bienaventurado el hombre a quien tú, Señor, corriges, y en tu ley lo instruyes."}, {"n": 44, "heb": "ילה", "name": "YLAHIAH", "tema": "Aliviando el karma", "subtitulo": "Saldar deudas del alma", "meditacion": "El karma no es un castigo sino un sistema de aprendizaje y equilibrio cósmico. Ylahiah trabaja en acelerar el proceso de resolución kármica, transformando deudas antiguas del alma en sabiduría ganada. No tienes que sufrir indefinidamente para saldar lo que debes; puedes hacerlo a través de la conciencia, el arrepentimiento genuino y las acciones correctivas. Este Nombre es tu aliado en ese proceso de liberación.", "salmo": "Salmo 32 — Bienaventurado aquel cuya transgresión ha sido perdonada, y cubierto su pecado."}, {"n": 45, "heb": "סאל", "name": "SEALIAH", "tema": "Prosperidad", "subtitulo": "Abrir el canal de la abundancia", "meditacion": "La prosperidad es el estado natural del universo; la escasez es la ilusión. Sealiah trabaja en disolver las creencias inconscientes que bloquean el flujo de abundancia en tu vida: la culpa por tener, el miedo a perder y la sensación de no merecer. La prosperidad que buscas no solo es material; incluye salud, relaciones, creatividad y paz interior. Este Nombre abre todos esos canales simultáneamente.", "salmo": "Salmo 65 — Visitas la tierra y la sacias; en gran manera la enriqueces con el río de Dios."}, {"n": 46, "heb": "ערי", "name": "ARIEL", "tema": "Certeza absoluta", "subtitulo": "Fe que no necesita prueba", "meditacion": "La certeza espiritual no es la ausencia de dudas sino la capacidad de actuar con plena confianza a pesar de ellas. Ariel te conecta con esa certeza interior que va más allá de la lógica y la evidencia visible. Cuando operas desde este estado, los obstáculos se disuelven, las sincronicidades aumentan y la vida fluye con una facilidad que antes parecía imposible. La certeza es el imán más poderoso del universo.", "salmo": "Salmo 16 — A Jehová he puesto siempre delante de mí; porque está a mi diestra, no seré conmovido."}, {"n": 47, "heb": "עשל", "name": "ASALIAH", "tema": "Transformación global", "subtitulo": "Tu cambio transforma el mundo", "meditacion": "Cada transformación genuina que ocurre en un ser humano envía ondas de cambio por toda la red de la conciencia colectiva. Asaliah te recuerda que tu trabajo interior no es egoísta; es una contribución al despertar global. Cuando te liberas de una creencia limitante, cuando perdonas una herida antigua o cuando eliges el amor sobre el miedo, estás participando en la transformación del mundo.", "salmo": "Salmo 22 — Se acordarán y se volverán al Señor todos los confines de la tierra."}, {"n": 48, "heb": "מיה", "name": "MIHAEL", "tema": "Unidad", "subtitulo": "Recordar que somos uno", "meditacion": "La separación es la ilusión fundamental que da origen a todo sufrimiento. Mihael activa en tu conciencia la experiencia vivida de la unidad: que todo está conectado, que el otro eres tú en otra forma, y que el universo es un organismo único del que eres parte inseparable. Esta no es solo una idea filosófica; es una experiencia que transforma radicalmente cómo te relacionas con todo.", "salmo": "Salmo 133 — ¡Mirad cuán bueno y cuán delicioso es habitar los hermanos juntos en armonía!"}, {"n": 49, "heb": "והו", "name": "VEHUEL", "tema": "Felicidad", "subtitulo": "El estado que siempre buscaste", "meditacion": "La felicidad no es el destino al que llegas después de resolver todos tus problemas; es el estado desde el que eliges vivir ahora mismo. Vehuel trabaja en disolver la postergación de la alegría: la creencia de que serás feliz cuando tengas, logres o te conviertas en algo diferente. La felicidad que buscas afuera ya existe adentro, esperando ser reconocida y elegida en cada momento.", "salmo": "Salmo 144 — Bienaventurado el pueblo cuyo Dios es el Señor."}, {"n": 50, "heb": "דני", "name": "DANIEL", "tema": "Suficiente nunca es suficiente", "subtitulo": "Sanar la insaciabilidad", "meditacion": "Hay una voz en el ser humano que siempre dice 'más': más dinero, más reconocimiento, más placer, más seguridad. Daniel trabaja en sanar esa insaciabilidad que nace de una herida de abandono o de escasez profundamente arraigada. El verdadero trabajo no es conseguir más sino descubrir que ya tienes suficiente. Desde ese lugar de plenitud, todo lo que genuinamente necesitas llega con facilidad.", "salmo": "Salmo 23 — El Señor es mi pastor; nada me faltará."}, {"n": 51, "heb": "החש", "name": "HAHASIAH", "tema": "Superando la culpa", "subtitulo": "Liberarse del peso del error", "meditacion": "La culpa no reparada se convierte en una condena autoimpuesta que bloquea tu capacidad de avanzar y recibir bien. Hahasiah trabaja en el proceso de genuino arrepentimiento seguido de genuino perdón hacia uno mismo. La diferencia entre culpa sana y culpa tóxica es que la primera te motiva a mejorar y la segunda simplemente te paraliza. Usa este Nombre para transformar el peso del pasado en sabiduría del presente.", "salmo": "Salmo 51 — Los sacrificios de Dios son el espíritu quebrantado; al corazón contrito y humillado no despreciarás tú, oh Dios."}, {"n": 52, "heb": "עמם", "name": "IMAMIAH", "tema": "Vivir con pasión", "subtitulo": "Encender el fuego interior", "meditacion": "Una vida sin pasión es una vida a medias. Imamiah activa el fuego sagrado que convierte lo ordinario en extraordinario, el deber en vocación y la rutina en ritual significativo. La pasión no es solo para los artistas o los aventureros; es el derecho de nacimiento de todo ser humano. ¿Qué te encendía antes que la vida cotidiana lo apagara? Este Nombre te ayuda a reencontrar y avivar esa llama.", "salmo": "Salmo 119 — El celo de tu casa me consume, y los denuestos de los que te vituperan cayeron sobre mí."}, {"n": 53, "heb": "ננא", "name": "NANAEL", "tema": "Sin motivos ulteriores", "subtitulo": "La pureza de intención", "meditacion": "¿Cuántas veces haces algo aparentemente bueno movido por motivaciones ocultas que no te atreves a admitir? Nanael trabaja en la purificación de tus intenciones, ayudándote a actuar desde un lugar de genuina generosidad sin necesitar nada a cambio. Cuando tus acciones nacen de esta pureza, generan un poder transformador que las acciones interesadas nunca pueden igualar. La transparencia de intención es una de las prácticas espirituales más exigentes y más poderosas.", "salmo": "Salmo 26 — Examíname, oh Señor, y pruébame; escudriña mis íntimos pensamientos y mi corazón."}, {"n": 54, "heb": "נית", "name": "NITHAEL", "tema": "Muerte a muerte", "subtitulo": "Transformar el miedo al fin", "meditacion": "El miedo a la muerte es el miedo más fundamental y el que da forma a todos los demás. Nithael trabaja en transformar tu relación con la muerte, no como un fin sino como una transición. Cuando pierdes el miedo a morir, también pierdes el miedo a vivir plenamente. Este Nombre también trabaja en las pequeñas muertes cotidianas: el fin de relaciones, de etapas, de identidades que ya no te sirven.", "salmo": "Salmo 116 — Preciosa es a los ojos del Señor la muerte de sus santos."}, {"n": 55, "heb": "מבה", "name": "MEBAHIAH", "tema": "Del pensamiento a la acción", "subtitulo": "Cerrar la brecha entre idea y realidad", "meditacion": "El espacio entre tener una idea y llevarla a cabo es donde viven la mayoría de los sueños sin realizar. Mebahiah actúa como un puente entre el mundo de las posibilidades y el mundo de los hechos, dándote el impulso, la organización y la disciplina necesarios para que lo que conciben tu mente y tu corazón se materialice en la realidad tangible. El pensamiento sin acción es solo fantasía; la acción con pensamiento es creación.", "salmo": "Salmo 20 — El Señor te otorgue conforme a tu corazón, y cumpla todo tu consejo."}, {"n": 56, "heb": "פוי", "name": "POYEL", "tema": "Disipar la rabia", "subtitulo": "Transformar el fuego destructivo", "meditacion": "La rabia no es intrínsecamente mala; es una señal de que un límite importante ha sido cruzado. El problema es cuando se convierte en una hoguera que te quema a ti primero. Poyel trabaja en transformar la energía de la rabia, liberando su fuerza legítima sin la destrucción que la acompaña. Te enseña a usar ese fuego para establecer límites, defenderte y actuar con eficacia sin perder el control.", "salmo": "Salmo 37 — Deja la ira, y desecha el enojo; no te excites en manera alguna a hacer lo malo."}, {"n": 57, "heb": "נמם", "name": "NEMAMIAH", "tema": "Escucha tu alma", "subtitulo": "El silencio que habla", "meditacion": "Tu alma te habla constantemente, pero el ruido de la vida cotidiana ahoga su voz. Nemamiah crea un espacio de silencio interior donde esa voz puede ser escuchada claramente. No necesitas retirarte a un monasterio; puedes aprender a acceder a ese silencio en medio del caos. Las respuestas que buscas afuera siempre han estado adentro. Este Nombre aguza tu capacidad de escuchar tu propia sabiduría más profunda.", "salmo": "Salmo 46 — Estad quietos y conoced que yo soy Dios."}, {"n": 58, "heb": "ייל", "name": "YEIALEL", "tema": "Desenchufar", "subtitulo": "El poder del descanso consciente", "meditacion": "Vivimos en una cultura que glorifica la hiperactividad y el agotamiento como medidas del valor personal. Yeialel trabaja en restablecer tu derecho al descanso genuino, ese que renueva tu ser a nivel celular y espiritual, no el que simplemente pausa el cansancio. Desenchufarte regularmente no es pereza; es mantenimiento del templo que eres. Lo que produces desde el descanso siempre supera lo que produces desde el agotamiento.", "salmo": "Salmo 23 — En lugares de delicados pastos me hará descansar; junto a aguas de reposo me pastoreará."}, {"n": 59, "heb": "הרח", "name": "HARAHEL", "tema": "Fortalecimiento de la conexión", "subtitulo": "Profundizar los vínculos sagrados", "meditacion": "Las conexiones genuinas entre seres humanos son puentes de luz que fortalecen el tejido del universo. Harahel trabaja en profundizar tus vínculos más importantes, llevándolos de la superficie a una dimensión de comprensión y amor verdaderos. Si hay una relación en tu vida que sientes que podría ser más profunda, contempla este Nombre. También te ayuda a reconocer y honrar las conexiones del alma que a veces pasan desapercibidas.", "salmo": "Salmo 25 — Muéstrame, oh Señor, tus caminos; enséñame tus sendas."}, {"n": 60, "heb": "מצר", "name": "MITZRAEL", "tema": "Libertad", "subtitulo": "Ser libre de verdad", "meditacion": "La libertad más profunda no es la ausencia de restricciones externas sino la capacidad de no ser esclavo de tus propios miedos, deseos compulsivos y condicionamientos. Mitzrael trabaja en todos los niveles de la libertad: la libertad de las opiniones ajenas, de los patrones heredados, del pasado que no puedes cambiar y del futuro que no puedes controlar. La libertad verdadera es un estado interior que nadie puede darte ni quitarte.", "salmo": "Salmo 119 — Andaré en libertad, porque busqué tus mandamientos."}, {"n": 61, "heb": "ומב", "name": "UMABEL", "tema": "Agua", "subtitulo": "Fluir como el agua", "meditacion": "El agua es el elemento de la adaptabilidad suprema: toma la forma del recipiente que la contiene sin perder su esencia. Umabel te enseña esta sabiduría fundamental: cómo ser flexible sin ser débil, cómo ceder sin rendirse y cómo encontrar siempre el camino hacia el océano a pesar de los obstáculos. Cuando la vida te pone barreras, el agua no las ataca; las rodea. Esta es la inteligencia que este Nombre activa en ti.", "salmo": "Salmo 42 — Como el ciervo brama por las corrientes de las aguas, así clama por ti, oh Dios, el alma mía."}, {"n": 62, "heb": "יהה", "name": "IAH-HEL", "tema": "Enseñanza por ejemplo", "subtitulo": "Ser lo que predicas", "meditacion": "Las palabras que más transforman no son las que se dicen sino las que se viven. Iah-Hel activa en ti el don de la coherencia: esa alineación entre lo que crees, dices y haces que hace que tu mera presencia sea una enseñanza. Las personas a tu alrededor aprenden más de cómo vives que de cualquier consejo que puedas darles. Ser el cambio que deseas ver en el mundo no es un cliché; es el método espiritual más poderoso.", "salmo": "Salmo 34 — Venid, hijos, oídme; el temor del Señor os enseñaré."}, {"n": 63, "heb": "ענו", "name": "ANAUEL", "tema": "Evaluación", "subtitulo": "Ver con claridad tu camino", "meditacion": "Periódicamente necesitas detenerte y evaluar honestamente dónde estás, a dónde vas y si el camino que sigues aún te lleva hacia lo que realmente quieres. Anauel te otorga la claridad y la honestidad necesarias para esta evaluación sin caer en el autoengaño ni en la autocrítica destructiva. Una evaluación genuina no es un juicio; es una brújula. Te dice dónde estás para que puedas decidir conscientemente hacia dónde ir.", "salmo": "Salmo 139 — Examíname, oh Dios, y conoce mi corazón; pruébame y conoce mis pensamientos."}, {"n": 64, "heb": "מחי", "name": "MEHIEL", "tema": "Revelando lo mejor de ti", "subtitulo": "Tu versión más elevada", "meditacion": "Dentro de ti existe una versión de ti mismo que ha resuelto los problemas que hoy te agobian, que ama sin condiciones y que vive con plena coherencia entre sus valores y sus acciones. Mehiel actúa como un espejo que refleja esa versión elevada, inspirándote a dar los pasos que te acercan a ella. No se trata de ser perfecto; se trata de ser más tú mismo en el sentido más profundo.", "salmo": "Salmo 139 — Te alabaré, porque formidables y maravillosas son tus obras; estoy maravillado, y mi alma lo sabe muy bien."}, {"n": 65, "heb": "דמב", "name": "DAMABIAH", "tema": "Justicia divina", "subtitulo": "Confiar en el orden cósmico", "meditacion": "Cuando ves injusticias sin resolver o cuando sientes que no has recibido lo que mereces, la tentación es tomar la justicia en tus propias manos o caer en la amargura. Damabiah te recuerda que existe un sistema de justicia cósmica que opera más allá de lo que puedes ver. No todo se resuelve en el tiempo que tú esperas ni de la manera que imaginas, pero todo se resuelve. Confía en ese orden superior.", "salmo": "Salmo 9 — El Señor juzgará al mundo con justicia, y a los pueblos con rectitud."}, {"n": 66, "heb": "מנק", "name": "MANAKEL", "tema": "Asumiendo responsabilidad", "subtitulo": "El poder de ser causa", "meditacion": "Mientras te veas como víctima de las circunstancias, estarás a merced de ellas. Manakel trabaja en el shift fundamental de víctima a creador: la comprensión de que tú eres en gran medida el autor de tu realidad. Esto no es culparte por lo que salió mal; es empoderarte para cambiarlo. Cuando asumes la responsabilidad de tu vida con amor, sin juicio, descubres que también tienes el poder de transformarla.", "salmo": "Salmo 119 — Yo conozco, oh Señor, que tus juicios son justos, y que conforme a tu fidelidad me afligiste."}, {"n": 67, "heb": "איע", "name": "EYAEL", "tema": "Pies en la tierra", "subtitulo": "Enraizarse en lo real", "meditacion": "La espiritualidad sin arraigo en lo cotidiano se convierte en escapismo. Eyael trabaja en la integración de lo espiritual con lo práctico, ayudándote a vivir tus valores más elevados en el mundo real con toda su complejidad y resistencia. Los pies en la tierra no contradicen la cabeza en el cielo; son lo que te permite estar en ambos lugares simultáneamente. Esta es la maestría de lo sagrado en lo ordinario.", "salmo": "Salmo 37 — El Señor afianza los pasos del hombre cuando le agrada su camino."}, {"n": 68, "heb": "חבו", "name": "HABUHIAH", "tema": "Ayuda desde más allá", "subtitulo": "Recibir asistencia invisible", "meditacion": "No estás solo en tu camino. Existe una red de asistencia espiritual disponible para ti en todo momento: guías, ángeles, ancestros elevados y la propia inteligencia del universo. Habuhiah abre tu capacidad de recibir esta ayuda que siempre ha estado disponible pero que muchas veces no puedes percibir por el ruido de la mente y la desconfianza. Pide. Confía. Recibe. Esa es la práctica de este Nombre.", "salmo": "Salmo 121 — Mi socorro viene del Señor, que hizo los cielos y la tierra."}, {"n": 69, "heb": "ראה", "name": "ROCHEL", "tema": "Perdidos y encontrados", "subtitulo": "Recuperar lo que se fue", "meditacion": "Hay cosas que hemos perdido que merecen ser recuperadas: relaciones, oportunidades, partes de nosotros mismos que abandonamos en el camino. Rochel trabaja en la recuperación de lo perdido, ya sea en el plano material o espiritual. También te ayuda a distinguir lo que vale la pena recuperar de lo que ya cumplió su ciclo. No todo lo perdido debe ser recuperado; la sabiduría está en saber la diferencia.", "salmo": "Salmo 23 — Él restituye mi alma; me guía por sendas de justicia por amor de su nombre."}, {"n": 70, "heb": "יבם", "name": "JABAMIAH", "tema": "Transformando problemas en desafíos", "subtitulo": "Ver el regalo en la dificultad", "meditacion": "La diferencia entre un problema y un desafío no está en la situación sino en la perspectiva desde la que la miras. Un problema te paraliza; un desafío te moviliza. Jabamiah trabaja en esa transformación de perspectiva que convierte los obstáculos en escalones. Cada dificultad contiene exactamente el aprendizaje que necesitas para tu siguiente nivel. La vida no te pone pruebas aleatorias; te da oportunidades perfectamente calibradas.", "salmo": "Salmo 119 — Antes de ser humillado anduve descarriado, pero ahora guardo tu palabra."}, {"n": 71, "heb": "היי", "name": "HAIAYEL", "tema": "Universos paralelos y profecía", "subtitulo": "Ver las líneas del destino", "meditacion": "En cada momento existen múltiples futuros posibles que divergen según las decisiones que tomas. Haiayel activa tu capacidad de percibir estas líneas de posibilidad y de elegir conscientemente hacia dónde querés dirigirte. La profecía no es un destino fijo sino la visión del camino más probable según tu energía actual. Al contemplar este Nombre, expandés tu conciencia temporal y te convertís en un navegante más sabio de tu propio destino.", "salmo": "Salmo 31 — En tu mano están mis tiempos; líbrame de la mano de mis enemigos y de mis perseguidores."}, {"n": 72, "heb": "מום", "name": "MUMIAH", "tema": "Purificación espiritual", "subtitulo": "El gran cierre y reinicio", "meditacion": "Mumiah es el último de los 72 Nombres y contiene la energía del cierre, la purificación final y la preparación para el próximo ciclo. Trabajar con este Nombre es como hacer una limpieza profunda del alma: todo lo que ya no sirve, todo lo que has acumulado sin darte cuenta, todo lo que bloquea tu próxima expansión es disuelto. Al completar los 72 Nombres y regresar al inicio, no volvés al mismo lugar; volvés transformado.", "salmo": "Salmo 90 — Enséñanos de tal modo a contar nuestros días, que traigamos al corazón sabiduría."}];
+
+/* ---------- utilidades ---------- */
+const LETTER_NAMES = {'א':'Álef','ב':'Bet','ג':'Guímel','ד':'Dálet','ה':'Hei','ו':'Vav','ז':'Zayin','ח':'Jet','ט':'Tet','י':'Yud','כ':'Kaf','ך':'Kaf','ל':'Lámed','מ':'Mem','ם':'Mem','נ':'Nun','ן':'Nun','ס':'Sámej','ע':'Ayin','פ':'Pei','ף':'Pei','צ':'Tsadi','ץ':'Tsadi','ק':'Kof','ר':'Resh','ש':'Shin','ת':'Tav'};
+const store = {
+  get(k){ try { return JSON.parse(localStorage.getItem(k)); } catch(e){ return null; } },
+  set(k,v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} }
+};
+const $ = id => document.getElementById(id);
+function phrase(p, color, foColor){
+  return `<div class="phrase"><div class="p-he">${p.he}</div><div class="p-tr" style="color:${color}">${p.tr}</div><div class="p-fo" style="color:${foColor}">"${nb(p.fo)}"</div><div class="p-es">${p.es}</div></div>`;
+}
+const nb = s => s.replace(/-/g, '\u2011');
+function pills(heb){ return [...heb].map(ch => `<span class="letra-pill">${LETTER_NAMES[ch]||ch}</span>`).join(''); }
+
+/* ---------- ciudades ---------- */
+const CITIES = [
+  ['Asunción',-25.2637,-57.5759,'America/Asuncion'],['Ciudad del Este',-25.5097,-54.6111,'America/Asuncion'],
+  ['Encarnación',-27.3306,-55.8667,'America/Asuncion'],['Concepción (PY)',-23.4064,-57.4344,'America/Asuncion'],
+  ['Pedro Juan Caballero',-22.5469,-55.7333,'America/Asuncion'],['Buenos Aires',-34.6037,-58.3816,'America/Argentina/Buenos_Aires'],
+  ['Córdoba (AR)',-31.4201,-64.1888,'America/Argentina/Cordoba'],['São Paulo',-23.5505,-46.6333,'America/Sao_Paulo'],
+  ['Montevideo',-34.9011,-56.1645,'America/Montevideo'],['Santiago de Chile',-33.4489,-70.6693,'America/Santiago'],
+  ['Lima',-12.0464,-77.0428,'America/Lima'],['Bogotá',4.7110,-74.0721,'America/Bogota'],
+  ['Ciudad de México',19.4326,-99.1332,'America/Mexico_City'],['Miami',25.7617,-80.1918,'America/New_York'],
+  ['Nueva York',40.7128,-74.0060,'America/New_York'],['Madrid',40.4168,-3.7038,'Europe/Madrid'],
+  ['Tel Aviv',32.0853,34.7818,'Asia/Jerusalem']
+];
+
+/* ---------- sol: amanecer, mediodía y atardecer (UTC ms) ---------- */
+function sunTimes(y, m, d, lat, lon){
+  const rad = Math.PI/180;
+  const jd0 = Date.UTC(y, m-1, d, 12) / 86400000 + 2440587.5;
+  const n = Math.round(jd0 - 2451545.0 + 0.0008);
+  const Js = n - lon/360;
+  const M = (357.5291 + 0.98560028*Js) % 360;
+  const C = 1.9148*Math.sin(M*rad) + 0.02*Math.sin(2*M*rad) + 0.0003*Math.sin(3*M*rad);
+  const L = (M + C + 180 + 102.9372) % 360;
+  const Jt = 2451545.0 + Js + 0.0053*Math.sin(M*rad) - 0.0069*Math.sin(2*L*rad);
+  const dec = Math.asin(Math.sin(L*rad)*Math.sin(23.44*rad));
+  const cosw = (Math.sin(-0.833*rad) - Math.sin(lat*rad)*Math.sin(dec)) / (Math.cos(lat*rad)*Math.cos(dec));
+  const w = Math.acos(Math.max(-1, Math.min(1, cosw))) / rad;
+  const toMs = J => (J - 2440587.5) * 86400000;
+  return { rise: toMs(Jt - w/360), noon: toMs(Jt), set: toMs(Jt + w/360) };
+}
+function localParts(ms, tz){
+  const f = new Intl.DateTimeFormat('en-US', { timeZone: tz, year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', hourCycle:'h23', weekday:'short' });
+  const o = {}; f.formatToParts(new Date(ms)).forEach(p => o[p.type] = p.value);
+  return { y:+o.year, m:+o.month, d:+o.day, hh:+o.hour, mm:+o.minute, wd:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].indexOf(o.weekday) };
+}
+const hhmm = (h,m) => String(h).padStart(2,'0') + ':' + String(m).padStart(2,'0');
+function addDays(y,m,d,n){ const t = new Date(Date.UTC(y,m-1,d+n)); return [t.getUTCFullYear(), t.getUTCMonth()+1, t.getUTCDate()]; }
+
+/* ---------- calendario hebreo (verificado contra ICU 1940–2040) ---------- */
+function hebrewDate(gY, gM, gD){
+  const a=Math.floor((14-gM)/12), y=gY+4800-a, m=gM+12*a-3;
+  const jd=gD+Math.floor((153*m+2)/5)+365*y+Math.floor(y/4)-Math.floor(y/100)+Math.floor(y/400)-32045;
+  const EP=347998;
+  const isLeap=yr=>((7*yr+1)%19)<7;
+  const d1=yr=>{const mo=Math.floor((235*yr-234)/19),pt=12084+13753*mo;let dy=mo*29+Math.floor(pt/25920);if(((3*(dy+1))%7)<3)dy++;return dy;};
+  const d2=yr=>{const l=d1(yr-1),p=d1(yr),n=d1(yr+1);return (n-p)===356?2:(p-l)===382?1:0;};
+  const yStart=yr=>EP+d1(yr)+d2(yr);
+  const yDays=yr=>yStart(yr+1)-yStart(yr);
+  const mDays=(yr,mo)=>{const yd=yDays(yr);
+    const t=isLeap(yr)?[0,30,29,30,29,30,30,29,30,29,30,29,30,29]:[0,30,29,30,29,30,29,30,29,30,29,30,29];
+    if(mo===2)return (yd%10===5)?30:29; if(mo===3)return (yd%10===3)?29:30; return t[mo];};
+  const nisan=yr=>isLeap(yr)?8:7, last=yr=>isLeap(yr)?13:12;
+  let year=Math.floor((jd-EP)*98496.0/35975351.0)+1;
+  while(yStart(year)<=jd)year++; year--;
+  let day=jd-yStart(year)+1, month=1;
+  while(day>mDays(year,month)){ day-=mDays(year,month); month++; }
+  let fromNisan=0;
+  if(month>=nisan(year)){ for(let mo=nisan(year);mo<month;mo++) fromNisan+=mDays(year,mo); fromNisan+=day; }
+  else { for(let mo=nisan(year-1);mo<=last(year-1);mo++) fromNisan+=mDays(year-1,mo); for(let mo=1;mo<month;mo++) fromNisan+=mDays(year,mo); fromNisan+=day; }
+  const leap=isLeap(year);
+  const names=leap?['','Tishrei','Jeshván','Kislev','Tevet','Shevat','Adar I','Adar II','Nisán','Iyar','Siván','Tamuz','Av','Elul']
+                  :['','Tishrei','Jeshván','Kislev','Tevet','Shevat','Adar','Nisán','Iyar','Siván','Tamuz','Av','Elul'];
+  // signo: índice desde Nisán (0=Aries)
+  const fromNisanMonth = month>=nisan(year) ? month-nisan(year) : (leap ? (month>=6 ? 11 : month-1+6) : month-1+6);
+  return { year, month, day, monthName:names[month], fromNisan, signIdx:fromNisanMonth%12, daysLeft:mDays(year,month)-day };
 }
 
-function buildCardInner(entry, colorClass) {
-  return `
-    <div class="card-header">
-      <span class="badge badge-${colorClass}">Nombre aleatorio · #${entry.n}</span>
-      <span class="card-num">#${entry.n}</span>
-    </div>
-    <div class="letras">${entry.letras.split(' · ').reverse().map(l=>`<span class="letra-pill">${l}</span>`).join('')}</div>
-    <div class="heb">${entry.heb}</div>
-    <div class="nombre">${entry.name}</div>
-    <div class="tema tema-${colorClass}">${entry.tema}</div>
-    <div class="divider divider-${colorClass}"></div>
-    <div class="subtitulo">${entry.subtitulo}</div>
-    <div class="meditacion collapsed" id="med-rand">${entry.meditacion}</div>
-    <button class="toggle-btn toggle-${colorClass}" onclick="toggleRand()">▼ leer más</button>
-    <div class="salmo salmo-${colorClass}" id="salmo-rand">${entry.salmo}</div>
-  `;
+/* ---------- signos (Sefer Yetzirá; letras de planetas según el Centro de Kabbalah) ---------- */
+const SIGNS = [
+  ['Aries','ה','Hei','Marte','ד','Dálet'],['Tauro','ו','Vav','Venus','פ','Pei'],['Géminis','ז','Zayin','Mercurio','ר','Resh'],
+  ['Cáncer','ח','Jet','Luna','ת','Tav'],['Leo','ט','Tet','Sol','כ','Kaf'],['Virgo','י','Yud','Mercurio','ר','Resh'],
+  ['Libra','ל','Lámed','Venus','פ','Pei'],['Escorpio','נ','Nun','Marte','ד','Dálet'],['Sagitario','ס','Sámej','Júpiter','ג','Guímel'],
+  ['Capricornio','ע','Ayin','Saturno','ב','Bet'],['Acuario','צ','Tsadi','Saturno','ב','Bet'],['Piscis','ק','Kof','Júpiter','ג','Guímel']
+];
+// Letras del mes tal como aparecen en el cuadro del Centro de Kabbalah (se escanean de derecha a izquierda)
+const MONTH_LETTERS = ['דה','פו','רז','חת','כט','רי','פל','דנ','סג','עב','צב','קג'];
+
+/* ---------- "ahora" según ciudad elegida ---------- */
+function getCity(){ const i = store.get('kb-city'); return CITIES[(i!=null && CITIES[i]) ? i : 0]; }
+function nowInfo(){
+  const c = getCity(), now = Date.now();
+  const lp = localParts(now, c[3]);
+  const st = sunTimes(lp.y, lp.m, lp.d, c[1], c[2]);
+  const afterSunset = now >= st.set;
+  const [hy,hm,hd] = afterSunset ? addDays(lp.y,lp.m,lp.d,1) : [lp.y,lp.m,lp.d];
+  const heb = hebrewDate(hy,hm,hd);
+  const hebWeekday = afterSunset ? (lp.wd+1)%7 : lp.wd;
+  let period;
+  if (now >= st.set || now < st.rise - 72*60000) period = ['Arvit','noche'];
+  else if (now < st.noon) period = ['Shajarit','mañana'];
+  else period = ['Minjá','tarde'];
+  const setL = localParts(st.set, c[3]);
+  return { city:c, lp, heb, hebWeekday, period, sunset:hhmm(setL.hh,setL.mm), afterSunset };
 }
 
-function toggleRand() {
-  const med = document.getElementById('med-rand');
-  const salmo = document.getElementById('salmo-rand');
-  const btn = med.nextElementSibling;
-  const open = med.classList.contains('expanded');
-  med.classList.toggle('expanded', !open);
-  med.classList.toggle('collapsed', open);
-  salmo.classList.toggle('visible', !open);
-  btn.textContent = open ? '▼ leer más' : '▲ cerrar';
+/* ================= CONTENIDO ================= */
+const MODEH = [
+  {he:'מוֹדֶה אֲנִי לְפָנֶיךָ', tr:'Modé Ani Lefanécha', fo:'mo-DÉ · a-NÍ · le-fa-NÉ-ja', es:'Te doy gracias ante Ti'},
+  {he:'מֶלֶךְ חַי וְקַיָּם', tr:'Mélech Chai VeKayám', fo:'MÉ-lej · JÁI · ve-ka-YÁM', es:'Rey vivo y eterno'},
+  {he:'שֶׁהֶחֱזַרְתָּ בִּי נִשְׁמָתִי', tr:'Shehechezárta Bi Nishmati', fo:'she-he-je-ZAR-ta · BI · nish-ma-TÍ', es:'Que has devuelto mi alma'},
+  {he:'בְּחֶמְלָה רַבָּה', tr:'Bechemlá Rabá', fo:'be-jem-LÁ · ra-BÁ', es:'Con gran misericordia'},
+  {he:'אֱמוּנָתֶךָ', tr:'Emunátecha', fo:'e-mu-na-TE-ja', es:'Grande es Tu fidelidad'}
+];
+const NETILAT = [
+  {he:'בָּרוּךְ אַתָּה יְהֹוָה', tr:'Barúj Atá Adonái', fo:'ba-RÚJ · a-TÁ · a-do-NÁI', es:'Bendito eres Tú, Señor'},
+  {he:'אֱלֹהֵינוּ מֶלֶךְ הָעוֹלָם', tr:'Elohéinu Mélej Haolám', fo:'e-lo-HÉI-nu · MÉ-lej · ha-o-LÁM', es:'Nuestro Dios, Rey del universo'},
+  {he:'אֲשֶׁר קִדְּשָׁנוּ בְּמִצְוֹתָיו', tr:'Ashér Kideshánu Bemitzvotáv', fo:'a-SHÉR · ki-de-SHÁ-nu · be-mits-vo-TÁV', es:'Que nos santificó con Sus mandamientos'},
+  {he:'וְצִוָּנוּ עַל נְטִילַת יָדָיִם', tr:'Vetzivánu Al Netilát Iadáim', fo:'ve-tsi-VÁ-nu · AL · ne-ti-LÁT · ia-DÁ-im', es:'Y nos ordenó el lavado de manos'}
+];
+const SHEMA = [
+  {he:'שְׁמַע יִשְׂרָאֵל', tr:'Shemá Israel', fo:'she-MÁ · is-ra-EL', es:'Escucha, Israel'},
+  {he:'יְהֹוָה אֱלֹהֵינוּ יְהֹוָה אֶחָד', tr:'Adonái Elohéinu Adonái Ejad', fo:'a-do-NÁI · e-lo-HÉI-nu · a-do-NÁI · e-JAD', es:'el Señor es nuestro Dios, el Señor es uno'}
+];
+const ANA_MEAN = ["Poder de redención. Amor incondicional. Eliminamos la influencia negativa de la materia física de nuestras vidas. Conectamos con la realidad del Árbol de la Vida. Recordamos las lecciones de ayer.", "Superamos nuestra naturaleza reactiva. Cerramos las puertas al Satán. Olvidamos todos los pensamientos limitados y limitantes.", "Conectamos con todas las formas de sustento. Rejuvenecemos nuestro cuerpo. Eliminamos la muerte de todos los aspectos de nuestra vida.", "Perseverancia.", "Vemos el panorama completo, y por lo tanto obtenemos entendimiento profundo y clarividencia acerca de cómo podemos conectarnos con la Luz y traer Luz a nosotros mismos y al mundo.", "Traemos la espiritualidad al mundo difundiendo la sabiduría de la Kabbalah.", "Obtenemos el poder de la renovación y la restauración."];
+const ANA = [
+  {day:'Domingo', sef:'Jésed', combo:'אבג יתץ', comboTr:'Álef Bet Guímel · Yud Tav Tsadi',
+   he:'אָנָּא בְּכֹחַ גְּדֻלַּת יְמִינְךָ תַּתִּיר צְרוּרָה', tr:'Aná bejóaj guedulat yemineja tatir tserurá',
+   fo:'a-NÁ · be-JÓ-aj · gue-du-LAT · ye-mi-NE-ja · ta-TIR · tse-ru-RÁ', es:'Te rogamos, con la fuerza de Tu diestra, desata lo que está atado'},
+  {day:'Lunes', sef:'Guevurá', combo:'קרע שטן', comboTr:'Kof Resh Ayin · Sin Tet Nun',
+   he:'קַבֵּל רִנַּת עַמְּךָ שַׂגְּבֵנוּ טַהֲרֵנוּ נוֹרָא', tr:'Kabel rinat ameja sagvenu taharenu norá',
+   fo:'ka-BEL · ri-NAT · a-ME-ja · sag-VE-nu · ta-ha-RE-nu · no-RÁ', es:'Acepta el canto de Tu pueblo; elévanos, purifícanos, oh Temible'},
+  {day:'Martes', sef:'Tiféret', combo:'נגד יכש', comboTr:'Nun Guímel Dálet · Yud Kaf Shin',
+   he:'נָא גִבּוֹר דּוֹרְשֵׁי יִחוּדְךָ כְּבָבַת שָׁמְרֵם', tr:'Na guibor dorshei yijudeja quevavat shamrem',
+   fo:'NA · gui-BOR · dor-SHEI · yi-ju-DE-ja · que-va-VAT · sham-REM', es:'Poderoso, a quienes buscan Tu unidad cuídalos como a la niña de Tus ojos'},
+  {day:'Miércoles', sef:'Nétsaj', combo:'בטר צתג', comboTr:'Bet Tet Resh · Tsadi Tav Guímel',
+   he:'בָּרְכֵם טַהֲרֵם רַחֲמֵי צִדְקָתְךָ תָּמִיד גָּמְלֵם', tr:'Barjem taharem rajamei tsidkateja tamid gomlem',
+   fo:'bar-JEM · ta-ha-REM · ra-ja-MEI · tsid-ka-TE-ja · ta-MID · gom-LEM', es:'Bendícelos, purifícalos; otórgales siempre la misericordia de Tu justicia'},
+  {day:'Jueves', sef:'Hod', combo:'חקב טנע', comboTr:'Jet Kof Bet · Tet Nun Ayin',
+   he:'חֲסִין קָדוֹשׁ בְּרוֹב טוּבְךָ נַהֵל עֲדָתֶךָ', tr:'Jasín kadosh berov tuvjá nahel adateja',
+   fo:'ja-SÍN · ka-DOSH · be-ROV · tuv-JÁ · na-HEL · a-da-TE-ja', es:'Fuerte y Santo, con Tu inmensa bondad guía a Tu congregación'},
+  {day:'Viernes', sef:'Yesod', combo:'יגל פזק', comboTr:'Yud Guímel Lámed · Pei Zayin Kof',
+   he:'יָחִיד גֵּאֶה לְעַמְּךָ פְּנֵה זוֹכְרֵי קְדֻשָּׁתֶךָ', tr:'Yajid gueé leamjá pené zojrei kedushateja',
+   fo:'ya-JID · gue-É · le-am-JÁ · pe-NÉ · zoj-REI · ke-du-sha-TE-ja', es:'Único y Excelso, vuélvete a Tu pueblo, que recuerda Tu santidad'},
+  {day:'Sábado', sef:'Maljut', combo:'שקו צית', comboTr:'Shin Kof Vav · Tsadi Yud Tav',
+   he:'שַׁוְעָתֵנוּ קַבֵּל וּשְׁמַע צַעֲקָתֵנוּ יוֹדֵעַ תַּעֲלֻמוֹת', tr:'Shavatenu kabel ushmá tsaakatenu yodea taalumot',
+   fo:'shav-a-TE-nu · ka-BEL · ush-MÁ · tsa-a-ka-TE-nu · yo-DE-a · ta-a-lu-MOT', es:'Acepta nuestra súplica y escucha nuestro clamor, Tú que conoces lo oculto'}
+];
+// Ángeles del día (libro de oraciones del Centro de Kabbalah). rt = iniciales que forman una vocal.
+const SHVA = {he:'שמעיאל ברכיאל אהניאל', tr:'Shemaiel · Barkiel · Ahniel', fo:'she-ma-i-EL · bar-ki-EL · ah-ni-EL', rt:'שוא', rtTr:'Shvá'};
+const SEGOL = {he:'סמטוריה גוריאל ועניאל למואל', tr:'Samturiá · Guriel · Vaaniel · Lemuel', fo:'sam-tu-RI-a · gu-ri-EL · va-a-ni-EL · le-mu-EL', rt:'סגול', rtTr:'Segol'};
+const ANGELS = {
+  0: {label:'Domingo', sets:[SEGOL]},
+  1: {label:'Lunes', sets:[SHVA]},
+  2: {label:'Martes', sets:[{he:'חניאל להדיאל מחניאל', tr:'Janiel · Lahadiel · Majniel', fo:'ja-ni-EL · la-ha-di-EL · maj-ni-EL', rt:'חלם', rtTr:'Jólam'}]},
+  3: {label:'Miércoles', sets:[{he:'חזקיאל רהטיאל קדשיאל', tr:'Jazkiel · Rahatiel · Kadshiel', fo:'jaz-ki-EL · ra-ha-ti-EL · kad-shi-EL', rt:'חרק', rtTr:'Jírik'}]},
+  4: {label:'Jueves', sets:[{he:'שמועאל רעמיאל קניאל', tr:'Shemuel · Raamiel · Kaniel', fo:'she-mu-EL · ra-a-mi-EL · ka-ni-EL', rt:'שרק', rtTr:'Shuruk', extra:'El Kubutz comparte estos ángeles.'}]},
+  5: {label:'Viernes', sets:[{he:'שומושויאולו רופואולו קודושויאולו', tr:'Shamshiel · Rafael · Kadshiel', fo:'sham-shi-EL · ra-fa-EL · kad-shi-EL', rt:'שרק', rtTr:'Shuruk', extra:'En el libro se escriben con Shuruk (וּ) después de cada letra.'}]},
+  'leil': {label:'Viernes por la noche · Leil Shabat', sets:[SHVA, SEGOL, {he:'צוריאל רזיאל יופיאל', tr:'Tsuriel · Raziel · Yofiel', fo:'tsu-ri-EL · ra-zi-EL · yo-fi-EL', rt:'צירי', rtTr:'Tseré'}]},
+  'shajarit': {label:'Sábado por la mañana', sets:[SHVA, {he:'קדמיאל מלכיאל צוריאל', tr:'Kadmiel · Malkiel · Tsuriel', fo:'kad-mi-EL · mal-ki-EL · tsu-ri-EL', rt:'קמץ', rtTr:'Kamats'}]},
+  'minja': {label:'Sábado por la tarde', sets:[SHVA, {he:'פדאל תלמיאל (תומיאל) חסדיאל', tr:'Pedael · Talmiel (Tumiel) · Jasdiel', fo:'pe-da-EL · tal-mi-EL · jas-di-EL', rt:'פתח', rtTr:'Pataj'}]}
+};
+const ANGEL_ORDER = [0,1,2,3,4,5,'leil','shajarit','minja'];
+function angelKey(n){
+  if (n.hebWeekday !== 6) return n.hebWeekday;
+  if (n.afterSunset || n.lp.wd === 5) return 'leil';
+  return n.period[0] === 'Minjá' ? 'minja' : 'shajarit';
+}
+function angelBlock(a){
+  return a.sets.map(s => phrase({he:s.he, tr:s.tr, fo:s.fo, es:`Iniciales: <span class="he">${s.rt}</span> (${s.rtTr})${s.extra ? ' · ' + s.extra : ''}`}, 'var(--teal)', 'rgba(20,80,80,0.9)')).join('');
+}
+const TIKUN = [
+  ['Kéter','Cráneo','יָהָוָהָ'],['Jojmá','Cerebro derecho','יַהַוַהַ'],['Biná','Cerebro izquierdo','יֵהֵוֵהֵ'],
+  ['Ojos','Derecho e izquierdo','יהוה יהוה<br>יהוה<br>יהוה יהוה'],['Oídos','Derecho e izquierdo','יוד הי ואו הה'],
+  ['Boca','','יוד הי ואו הי (אהיה)'],
+  ['Jésed','Brazo derecho','יֶהֶוֶהֶ'],['Guevurá','Brazo izquierdo','יְהְוְהְ'],['Tiféret','Cuerpo','יֹהֹוֹהֹ'],
+  ['Nétsaj','Pierna derecha','יִהִוִהִ'],['Hod','Pierna izquierda','יֻהֻוֻהֻ'],['Yesod','Órganos reproductivos','יוּ הוּ וּ הוּ'],
+  ['Maljut','Atará','יאהדונהי']
+];
+const PRECEPTOS = [
+  {n:1, he:'יִרְאַת הַשֵּׁם', tr:'Yirat Hashem', fo:'yir-AT · ha-SHEM', es:'Reverencia al Creador',
+   kid:'Es como cuando entrás a un lugar muy lindo y especial y hablás despacito, con respeto. Dios es tan grande que queremos portarnos bien, no por miedo a un reto, sino porque no queremos lastimar algo tan valioso.',
+   app:'Antes de una decisión, preguntate: ¿esto me acerca o me aleja de lo que vale? Es la pausa entre el impulso y la acción.'},
+  {n:2, he:'אַהֲבַת הַשֵּׁם', tr:'Ahavat Hashem', fo:'a-ha-VAT · ha-SHEM', es:'Amor al Creador',
+   kid:'Querés a tu mamá y a tu papá cuando te dan un regalo y también cuando te dicen que no. Así se quiere a Dios: en los días lindos y en los feos.',
+   app:'Agradecé también lo que no salió como querías. Buscá qué te enseñó antes de juzgarlo.'},
+  {n:3, he:'יִחוּד הַשֵּׁם', tr:'Yijud Hashem', fo:'yi-JUD · ha-SHEM', es:'Proclamar la unidad: Shemá Israel',
+   kid:'Todo lo que ves, el sol, los árboles, vos y tus amigos, viene del mismo lugar, como todas las ramas vienen del mismo árbol. Por eso decimos el Shemá: para acordarnos.',
+   app:'Decí el Shemá mañana y noche. Cuando sientas que algo "está en tu contra", recordá que también forma parte de lo mismo.'},
+  {n:4, he:'יְהֹוָה הוּא הָאֱלֹהִים', tr:'Adonái hu haElohim', fo:'a-do-NÁI · HU · ha-e-lo-HIM', es:'Reconocer que Hashem y Elohim son uno',
+   kid:'A veces Dios es como un abrazo (cariño) y a veces como un límite (cuando te dicen "eso no"). Parecen distintos, pero los dos vienen del mismo amor.',
+   app:'Cuando la vida te pone un freno, no lo leas como castigo: el límite y la misericordia vienen de la misma Fuente.'},
+  {n:5, he:'תַּלְמוּד תּוֹרָה', tr:'Talmud Torá', fo:'tal-MUD · to-RÁ', es:'Estudiar la Torá',
+   kid:'La Torá es como un mapa del tesoro que explica cómo funciona el mundo. Cada vez que lo leés, encontrás algo nuevo.',
+   app:'Un rato de estudio todos los días, aunque sean 10 minutos de Zohar. La constancia pesa más que la cantidad.'},
+  {n:6, he:'פְּרִיָּה וּרְבִיָּה', tr:'Priá urviá', fo:'pri-YÁ · ur-vi-YÁ', es:'Procrear',
+   kid:'Dios quiere que las familias crezcan y que haya más vida y más amor en el mundo, como un jardín que da cada vez más flores.',
+   app:'Cuidá y hacé crecer lo que da vida: tu familia, tus vínculos, tus proyectos. Crear es parte del propósito.'},
+  {n:7, he:'בְּרִית מִילָה', tr:'Brit Milá', fo:'BRIT · mi-LÁ', es:'Circuncisión al octavo día',
+   kid:'Es una señal especial que se hace a los bebés varones cuando tienen 8 días, como la camiseta de un equipo: muestra que son parte de un pacto con Dios.',
+   app:'La Kabbalah lo lee también como "cortar" la capa de ego que tapa lo que sos. Identificá un hábito que te tapa y empezá a soltarlo.'},
+  {n:8, he:'אַהֲבַת הַגֵּר', tr:'Ahavat haGuer', fo:'a-ha-VAT · ha-GUER', es:'Amar al converso',
+   kid:'Cuando llega un nene nuevo al colegio, lo invitás a jugar para que no se sienta solo. Así recibimos a quien elige sumarse.',
+   app:'Recibí con calidez al que llega nuevo a tu grupo, a tu trabajo o a tu estudio. Acordate de cómo fue tu primer día.'},
+  {n:9, he:'צְדָקָה', tr:'Tsedaká', fo:'tse-da-KÁ', es:'Compasión y alimento para quien necesita',
+   kid:'Si tenés dos galletitas y tu amigo no tiene ninguna, le das una. Compartir hace que el mundo sea más justo.',
+   app:'Separá algo fijo para dar, aunque sea poco, y hacelo seguido. La regularidad transforma más que un gesto aislado.'},
+  {n:10, he:'תְּפִלִּין', tr:'Tefilín', fo:'te-fi-LÍN', es:'Tefilín',
+   kid:'Son dos cajitas con textos sagrados que se atan en el brazo y en la cabeza, cerca del corazón y de la mente, para que pensamiento y sentimiento vayan juntos.',
+   app:'Alineá cabeza y corazón: antes de actuar, chequeá que lo que pensás y lo que sentís apunten al mismo lado.'},
+  {n:11, he:'מַעֲשֵׂר', tr:'Maaser', fo:'ma-a-SER', es:'Diezmo de los productos de la tierra',
+   kid:'De cada diez frutas que cosechás, una se comparte. Así recordamos que lo que tenemos es un regalo.',
+   app:'Destiná una parte fija de tus ingresos a dar. No es perder: es reconocer que no todo lo que pasa por tus manos es solo tuyo.'},
+  {n:12, he:'בִּכּוּרִים', tr:'Bikurim', fo:'bi-ku-RIM', es:'Primicias de los frutos de los árboles',
+   kid:'La primera fruta del árbol, la más esperada, se lleva como regalo para dar gracias. Primero agradecemos, después disfrutamos.',
+   app:'Cuando algo nuevo da fruto (un sueldo, un proyecto, un logro), lo primero es agradecer y compartir una parte.'},
+  {n:13, he:'פִּדְיוֹן הַבֵּן', tr:'Pidión haBen', fo:'pid-YÓN · ha-BEN', es:'Rescate del primogénito',
+   kid:'Cuando nace el primer hijo varón, la familia hace una ceremonia especial para agradecer por esa nueva vida.',
+   app:'Cuidá con especial atención lo primero de cada cosa: el primer pensamiento del día, el primer paso de un proyecto marcan el resto.'},
+  {n:14, he:'שְׁמִירַת שַׁבָּת', tr:'Shemirat Shabat', fo:'she-mi-RAT · sha-BAT', es:'Observar y santificar Shabbat',
+   kid:'Después de trabajar toda la semana, hay un día especial para descansar, estar en familia y sentirse feliz, como un recreo largo y lindo.',
+   app:'Reservá un tiempo semanal sin trabajo ni pantallas para recargarte y conectar con los tuyos. Lo que hacés desde el descanso rinde más.'}
+];
+
+/* ================= RENDER ================= */
+function renderStatic(){
+  $('p-modeh').innerHTML = MODEH.map(p => phrase(p, 'var(--green)', 'rgba(30,90,30,0.9)')).join('');
+  $('p-netilat').innerHTML = NETILAT.map(p => phrase(p, 'var(--red)', 'rgba(140,50,50,0.9)')).join('');
+  $('p-shema').innerHTML = SHEMA.map(p => phrase(p, 'var(--red)', 'rgba(140,50,50,0.9)')).join('');
+  $('tikun').innerHTML = TIKUN.map(t => `<div class="tk-row"><div class="tk-part"><b>${t[0]}</b>${t[1]}</div><div class="tk-he">${t[2]}</div></div>`).join('')
+    + `<p class="note" style="font-size:14px;margin-top:10px">La boca incluye además los cinco grupos de letras: <span class="he">אחה״ע גיכ״ק דטלנ״ת זסשר״ץ בומ״ף</span>.</p>
+    <div class="tk-row" style="border-top:1px solid rgba(140,100,30,0.12)"><div class="tk-part"><b>Nariz</b>Dos columnas, tal como están en el cuadro</div>
+    <img alt="Letras de la nariz en el Tikún HaNéfesh" src="data:image/png;base64,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" style="width:150px;height:auto;border-radius:8px;background:#fff;padding:4px"></div>`;
+  $('preceptos').innerHTML = PRECEPTOS.map(p => `<details><summary><span class="pc-num">${p.n}</span><span class="pc-title">${p.es}</span><span class="pc-he">${p.he}</span></summary>
+    <div class="pc-body"><div style="font-size:17px;font-style:italic;color:var(--wine)">${p.tr}</div>
+    <div style="font-family:'Cinzel',serif;font-size:13px;font-weight:600;color:rgba(106,32,72,0.85);margin-bottom:6px">"${nb(p.fo)}"</div>
+    <h4>Como para un nene de 5 años</h4><p>${p.kid}</p><h4>En la práctica</h4><p>${p.app}</p></div></details>`).join('');
+  const sel = $('name-select');
+  sel.innerHTML = NOMBRES.map(x => `<option value="${x.n}">${x.n} · ${x.name}</option>`).join('');
+  $('b-city').innerHTML = CITIES.map((c,i) => `<option value="${i}">${c[0]}</option>`).join('');
+  $('ver').textContent = 'Versión ' + APP_VERSION;
 }
 
-function toggleBirth() {
-  const med = document.getElementById('res-med');
-  const salmo = document.getElementById('res-salmo');
-  const btn = med.nextElementSibling;
-  const open = med.classList.contains('expanded');
-  med.classList.toggle('expanded', !open);
-  med.classList.toggle('collapsed', open);
-  salmo.classList.toggle('visible', !open);
-  btn.textContent = open ? '▼ leer más' : '▲ cerrar';
+function nameCardHTML(e, color){
+  return `<div class="card-header"><span class="badge" style="color:${color}">${e.tema}</span><span class="card-num">#${e.n}</span></div>
+    <div class="letras">${pills(e.heb)}</div>
+    <div class="heb72">${e.heb}</div>
+    <div class="nombre">${e.name}</div>
+    <div class="tema" style="color:${color};margin-bottom:4px">${e.tema}</div>
+    <div class="rule"></div>
+    <div class="subtitulo">${e.subtitulo}</div>
+    <div class="meditacion">${e.meditacion}</div>
+    <div class="salmo" style="color:${color}">${e.salmo}</div>`;
 }
 
-// CONVERSIÓN GREGORIANA → HEBREA
-function gregorianToHebrew(gY, gM, gD) {
-  const a = Math.floor((14-gM)/12), y = gY+4800-a, m = gM+12*a-3;
-  let jd = gD + Math.floor((153*m+2)/5) + 365*y + Math.floor(y/4) - Math.floor(y/100) + Math.floor(y/400) - 32045;
-  const EP = 347997;
-  const isLeap = yr => ((7*yr+1)%19)<7;
-  const d1 = yr => { const mo=Math.floor((235*yr-234)/19),pt=12084+13753*mo; let dy=mo*29+Math.floor(pt/25920); if(((3*(dy+1))%7)<3)dy++; return dy; };
-  const d2 = yr => { const l=d1(yr-1),p=d1(yr),n=d1(yr+1); return (n-p)===356?2:(p-l)===382?1:0; };
-  const yStart = yr => EP+d1(yr)+d2(yr);
-  const yDays = yr => yStart(yr+1)-yStart(yr);
+/* Nombre del día */
+let currentName = null;
+function randomName(){ let n; do { n = Math.floor(Math.random()*72)+1; } while (n === currentName); return n; }
+function showName(n){ currentName = n; $('name-select').value = n; $('name-card').innerHTML = nameCardHTML(NOMBRES[n-1], 'var(--blue)'); }
+function stepName(d){ showName(((currentName - 1 + d + 72) % 72) + 1); }
 
-  // Tabla de días por mes - correcta para años bisiestos (13 meses)
-  const mDays = (yr, mo) => {
-    const yd = yDays(yr);
-    const leap = isLeap(yr);
-    if (!leap) {
-      // 12 meses: Tishrei(1)...Adar(6),Nisan(7),Iyar(8),Sivan(9),Tammuz(10),Av(11),Elul(12)
-      const t = {1:30,2:29,3:30,4:29,5:30,6:29,7:30,8:29,9:30,10:29,11:30,12:29};
-      if(mo===2) t[2] = (yd===355||yd===385)?30:29;
-      if(mo===3) t[3] = (yd===353||yd===383)?29:30;
-      return t[mo]||29;
-    } else {
-      // 13 meses: Tishrei(1)...AdarI(6),AdarII(7),Nisan(8),Iyar(9),Sivan(10),Tammuz(11),Av(12),Elul(13)
-      const t = {1:30,2:29,3:30,4:29,5:30,6:30,7:29,8:30,9:29,10:30,11:29,12:30,13:29};
-      if(mo===2) t[2] = (yd===355||yd===385)?30:29;
-      if(mo===3) t[3] = (yd===353||yd===383)?29:30;
-      return t[mo]||29;
-    }
-  };
-
-  // Nisan es mes 7 en año normal, mes 8 en año bisiesto
-  const nisanMonth = yr => isLeap(yr) ? 8 : 7;
-  // Último mes: 12 normal, 13 bisiesto
-  const lastMonth = yr => isLeap(yr) ? 13 : 12;
-
-  let year = Math.floor((jd-EP)*98496.0/35975351.0)+1;
-  while(yStart(year)<=jd) year++;
-  year--;
-  let rem = jd - yStart(year) + 1;
-  let month = 1;
-  while(rem > mDays(year,month)) { rem -= mDays(year,month); month++; }
-  const day = rem;
-  const total = yDays(year);
-
-  // Días desde 1 Nisan (kabbalístico)
-  let daysFromNisan = 0;
-  const nisan = nisanMonth(year);
-  if(month >= nisan) {
-    for(let mo=nisan; mo<month; mo++) daysFromNisan += mDays(year,mo);
-    daysFromNisan += day;
+/* Nombre del alma */
+function calcAlma(){
+  const date = $('b-date').value, time = $('b-time').value, ci = +$('b-city').value;
+  if (!date) { $('b-date').focus(); return; }
+  const c = CITIES[ci];
+  let [y,m,d] = date.split('-').map(Number);
+  const st = sunTimes(y, m, d, c[1], c[2]);
+  const sl = localParts(st.set, c[3]);
+  const sunset = hhmm(sl.hh, sl.mm);
+  let after = false, how;
+  if (time) {
+    after = time >= sunset;
+    how = after ? `Naciste a las ${time}, después del atardecer (${sunset} en ${c[0]}): el día hebreo ya había cambiado.`
+                : `Naciste a las ${time}, antes del atardecer (${sunset} en ${c[0]}).`;
   } else {
-    // Antes de Nisan: desde Nisan del año anterior
-    const prevNisan = nisanMonth(year-1);
-    const prevLast = lastMonth(year-1);
-    for(let mo=prevNisan; mo<=prevLast; mo++) daysFromNisan += mDays(year-1,mo);
-    for(let mo=1; mo<month; mo++) daysFromNisan += mDays(year,mo);
-    daysFromNisan += day;
+    how = 'Sin hora: asumimos que naciste de día.';
   }
-
-  return { year, month, day, total, daysFromNisan };
+  if (after) [y,m,d] = addDays(y,m,d,1);
+  const heb = hebrewDate(y,m,d);
+  const idx = Math.min(71, Math.floor((heb.fromNisan - 1) / 5));
+  const e = NOMBRES[idx];
+  store.set('kb-birth', { date, time, ci });
+  $('alma-form').style.display = 'none';
+  $('alma-result').style.display = 'block';
+  $('alma-result').innerHTML = nameCardHTML(e, 'var(--purple)') +
+    `<div class="rule"></div><p class="note" style="font-size:15px">${heb.day} de ${heb.monthName} de ${heb.year} · día ${heb.fromNisan} desde el 1 de Nisán.<br>${how}</p>
+     <div style="text-align:center;margin-top:14px"><button class="btn" onclick="resetAlma()">↩ Cambiar datos</button></div>`;
+}
+function resetAlma(){ $('alma-form').style.display = 'block'; $('alma-result').style.display = 'none'; }
+function loadAlma(){
+  const b = store.get('kb-birth');
+  if (b && b.date) { $('b-date').value = b.date; $('b-time').value = b.time || ''; $('b-city').value = b.ci || 0; calcAlma(); }
+  else { const old = store.get('kabbalah-birth'); if (old) $('b-date').value = old; }
 }
 
-function calcularNombre() {
-  const val = document.getElementById('birth-date').value;
-  if(!val) { alert('Por favor ingresá tu fecha de nacimiento'); return; }
-  const [y,m,d] = val.split('-').map(Number);
-  const heb = gregorianToHebrew(y,m,d);
-  const idx = Math.min(71, Math.floor((heb.daysFromNisan-1)/5));
-  const entry = NOMBRES.find(x => x.n === idx+1);
-  if(!entry) return;
-  try { localStorage.setItem('kabbalah-birth', val); } catch(e) {}
-  mostrarNombre(entry, heb);
+/* Ana Bekoach */
+function renderAna(){
+  const n = nowInfo(), s = SIGNS[n.heb.signIdx], next = SIGNS[(n.heb.signIdx+1)%12];
+  const dayName = ANA[n.hebWeekday].day;
+  $('ana-status').innerHTML = `
+    <div class="stat"><div class="k">Hoy</div><div class="v">${dayName} · ${ANA[n.hebWeekday].sef}</div><div class="s">Línea ${n.hebWeekday+1}${n.afterSunset ? ' · ya pasó el atardecer' : ''}</div></div>
+    <div class="stat"><div class="k">Momento</div><div class="v">${n.period[0]}</div><div class="s">Rezo de la ${n.period[1]} · atardecer ${n.sunset}</div></div>
+    <div class="stat wide"><div class="k">Signo del mes · ${n.heb.monthName}</div>
+      <div class="v">${s[0]} <span class="he" style="font-size:30px;margin-right:6px">${MONTH_LETTERS[n.heb.signIdx]}</span></div>
+      <div class="letras" style="justify-content:flex-start;margin:6px 0">${pills(MONTH_LETTERS[n.heb.signIdx])}</div>
+      <div class="s">Signo: ${s[2]} · Planeta (${s[3]}): ${s[5]} · se escanean de derecha a izquierda · ${n.heb.daysLeft === 0 ? `mañana empieza ${next[0]}` : `${n.heb.daysLeft === 1 ? 'falta 1 día' : `faltan ${n.heb.daysLeft} días`} para ${next[0]}`}</div></div>
+    <div class="stat wide"><div class="k">Ciudad</div>
+      <select class="field" style="margin:4px 0 0;font-size:14px;padding:8px 10px" onchange="store.set('kb-city', +this.value); renderAna(); renderHeader();">
+      ${CITIES.map((c,i) => `<option value="${i}" ${c===n.city?'selected':''}>${c[0]}</option>`).join('')}</select></div>`;
+  $('ana-lines').innerHTML = ANA.map((l,i) => `<div class="ab-line ${i===n.hebWeekday?'today':''}" ${i===n.hebWeekday?'id="ab-today"':''}>
+    <div class="phrase"><div class="ab-day">${i+1} · ${l.day} · ${l.sef}${i===n.hebWeekday?'<span class="tag">Hoy</span>':''}</div>
+    <div class="p-he">${l.he}</div><div class="p-tr" style="color:var(--teal)">${l.tr}</div>
+    <div class="p-fo" style="color:rgba(20,80,80,0.9)">"${nb(l.fo)}"</div><div class="p-es">${l.es}</div>
+    <div class="ab-combo">${l.combo}</div><div class="ab-combo-tr">${l.comboTr}</div>
+    <p class="note" style="font-size:15px;margin-top:8px">${ANA_MEAN[i]}</p></div></div>`).join('');
+  const key = angelKey(n), a = ANGELS[key];
+  $('ana-angels').innerHTML = `<div class="card-header"><span class="badge" style="color:var(--teal)">Ángeles de hoy</span><span class="card-num">${a.label}</span></div>
+    <p class="note" style="margin-bottom:4px">Se escanean con la vista después de la línea del día.</p>` + angelBlock(a) +
+    `<details style="margin-top:10px"><summary><span class="pc-title" style="font-family:'Cinzel',serif;font-size:12px;letter-spacing:2px;color:var(--teal)">VER LOS ÁNGELES DE TODOS LOS DÍAS</span></summary>
+     ${ANGEL_ORDER.filter(k => k !== key).map(k => `<div class="ab-day" style="padding-top:16px">${ANGELS[k].label}</div>` + angelBlock(ANGELS[k])).join('')}</details>`;
 }
 
-function mostrarNombre(entry, heb) {
-  document.getElementById('birth-input-section').style.display = 'none';
-  document.getElementById('birth-result').style.display = 'block';
-  document.getElementById('birth-num').textContent = '#'+entry.n;
-  document.getElementById('res-letras').innerHTML = entry.letras.split(' · ').reverse().map(l=>`<span class="letra-pill">${l}</span>`).join('');
-  document.getElementById('res-heb').textContent = entry.heb;
-  document.getElementById('res-name').textContent = entry.name;
-  document.getElementById('res-tema').textContent = entry.tema;
-  document.getElementById('res-subtitulo').textContent = entry.subtitulo;
-  document.getElementById('res-med').textContent = entry.meditacion;
-  document.getElementById('res-salmo').textContent = entry.salmo;
-  document.getElementById('res-cal').textContent = 'Día '+heb.daysFromNisan+' desde 1 Nisan · Año hebreo '+heb.year;
+/* Encabezado */
+function renderHeader(){
+  const n = nowInfo();
+  $('h-fecha').textContent = new Intl.DateTimeFormat('es-PY', { weekday:'long', day:'numeric', month:'long', timeZone:n.city[3] }).format(new Date());
+  $('h-heb').textContent = `${n.heb.day} de ${n.heb.monthName} ${n.heb.year} · ${SIGNS[n.heb.signIdx][0]}`;
 }
 
-function resetNombre() {
-  document.getElementById('birth-input-section').style.display = 'block';
-  document.getElementById('birth-result').style.display = 'none';
-  document.getElementById('birth-num').textContent = '—';
-  try { localStorage.removeItem('kabbalah-birth'); } catch(e) {}
+/* Novedades */
+function renderBanner(){
+  if (store.get('kb-seen') === APP_VERSION) { $('banner').innerHTML = ''; return; }
+  $('banner').innerHTML = `<div class="banner"><h3>Novedades · versión ${APP_VERSION}</h3><ul>${CHANGELOG.map(c=>`<li>${c}</li>`).join('')}</ul>
+    <button class="btn" onclick="store.set('kb-seen', APP_VERSION); renderBanner();">Entendido</button></div>`;
 }
 
-// Init
-document.getElementById('fecha').textContent = new Date().toLocaleDateString('es-PY',{weekday:'long',day:'numeric',month:'long'});
-document.getElementById('random-inner').innerHTML = buildCardInner(getRandom(0), 'blue');
+/* Navegación */
+const VIEWS = ['inicio','despertar','nombre','alma','ana','shema','preceptos'];
+function route(){
+  const v = (location.hash || '#inicio').slice(1);
+  const view = VIEWS.includes(v) ? v : 'inicio';
+  VIEWS.forEach(x => $('v-'+x).classList.toggle('active', x === view));
+  if (view === 'ana') { renderAna(); setTimeout(() => { const t = $('ab-today'); if (t) t.scrollIntoView({behavior:'smooth', block:'center'}); }, 250); }
+  if (view === 'inicio') { renderHeader(); renderBanner(); }
+  if (view !== 'ana') window.scrollTo(0,0);
+}
 
-// Auto-cargar fecha guardada
-try {
-  const saved = localStorage.getItem('kabbalah-birth');
-  if(saved) {
-    document.getElementById('birth-date').value = saved;
-    const [y,m,d] = saved.split('-').map(Number);
-    const heb = gregorianToHebrew(y,m,d);
-    const idx = Math.min(71, Math.floor((heb.daysFromNisan-1)/5));
-    const entry = NOMBRES.find(x => x.n === idx+1);
-    if(entry) mostrarNombre(entry, heb);
-  }
-} catch(e) {}
-</script>
+renderStatic();
+showName(randomName());
+loadAlma();
+$('b-city').value = $('b-city').value || 0;
+window.addEventListener('hashchange', route);
+route();
 
-<script>
+/* Service worker: red primero, para que siempre llegue la última versión */
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/72-nombres/sw.js')
-      .then(r => console.log('SW registrado:', r.scope))
-      .catch(e => console.log('SW error:', e));
-  });
+  const hadController = !!navigator.serviceWorker.controller;
+  let reloaded = false;
+  navigator.serviceWorker.addEventListener('controllerchange', () => { if (hadController && !reloaded) { reloaded = true; location.reload(); } });
+  window.addEventListener('load', () => { navigator.serviceWorker.register('/72-nombres/sw.js').catch(() => {}); });
 }
 </script>
 </body>
