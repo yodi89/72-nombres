@@ -1,7 +1,7 @@
 {
-  "name": "Kabbalah Diaria",
-  "short_name": "Kabbalah",
-  "description": "Kabbalah Diaria: Modeh Ani, 72 Nombres, Ana Bekoach, Shemá y más",
+  "name": "Kabala",
+  "short_name": "Kabala",
+  "description": "Kabala: Modeh Ani, 72 Nombres, Ana Bekoach, Shemá y más",
   "start_url": "/72-nombres/",
   "scope": "/72-nombres/",
   "display": "standalone",
@@ -10,13 +10,13 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/72-nombres/icon-192.PNG",
+      "src": "/72-nombres/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/72-nombres/icon-512.PNG",
+      "src": "/72-nombres/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
