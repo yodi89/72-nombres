@@ -1,7 +1,7 @@
 {
-  "name": "Kabala",
+  "name": "Kabala · Notas personales",
   "short_name": "Kabala",
-  "description": "Kabala: Modeh Ani, 72 Nombres, Ana Bekoach, Shemá y más",
+  "description": "Notas personales de un estudiante: Modeh Ani, 72 Nombres, Ana Bekoach, Shemá y más",
   "start_url": "/72-nombres/",
   "scope": "/72-nombres/",
   "display": "standalone",
