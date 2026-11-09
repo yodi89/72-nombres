@@ -1,7 +1,7 @@
 {
-  "name": "Kabala · Notas personales",
-  "short_name": "Kabala",
-  "description": "Notas personales de un estudiante: Modeh Ani, 72 Nombres, Ana Bekoach, Shemá y más",
+  "name": "Notas personales de un estudiante de Kabbalah",
+  "short_name": "Notas Kabbalah",
+  "description": "Notas personales de un estudiante de Kabbalah: Modeh Ani, 72 Nombres, Ana Bekoach, Shemá y más",
   "start_url": "/72-nombres/",
   "scope": "/72-nombres/",
   "display": "standalone",
