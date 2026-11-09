@@ -1,7 +1,7 @@
 {
-  "name": "72 Nombres · Meditación",
-  "short_name": "72 Nombres",
-  "description": "Los 72 Nombres de Dios - Meditación Kabbalística diaria",
+  "name": "Kabbalah Diaria",
+  "short_name": "Kabbalah",
+  "description": "Kabbalah Diaria: Modeh Ani, 72 Nombres, Ana Bekoach, Shemá y más",
   "start_url": "/72-nombres/",
   "scope": "/72-nombres/",
   "display": "standalone",
